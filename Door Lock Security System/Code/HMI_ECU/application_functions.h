@@ -153,20 +153,20 @@ void APP_sendPassword(uint8 * Password_Ptr);
  * [Description]: Function that is responsible for doing the following steps:
  *                 - Increment the number of wrong attempts
  *                 - Display the message "INCORRECT PASSWORD"
- *		  - Check the number of wrong attempts:
- *		  1- If it is not equal to MAXIMUM NUMBER OF ATTEMPTS, return
- *		from the function to get the password again from the user
- *		  2- If it is equal to MAXIMUM NUMBER OF ATTEMPTS, count the
- *			alarm time and hold the system for (15 Seconds), then return
- *			back to the MAIN LOOP again
+ *		   - Check the number of wrong attempts:
+ *		    1- If it is not equal to MAXIMUM NUMBER OF ATTEMPTS, return
+ *		  from the function to get the password again from the user
+ *		    2- If it is equal to MAXIMUM NUMBER OF ATTEMPTS, count the
+ *			  alarm time and hold the system for (15 Seconds), then return
+ *			  back to the MAIN LOOP again
  *
  * [Args]:	  None
  *
  * [in]		  None
  *
- * [out]	None
+ * [out]	 None
  *
- * [in/out]	None
+ * [in/out]	 None
  *
  * [Returns]:       None
  ********************************************************************************/
