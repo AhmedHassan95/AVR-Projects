@@ -32,7 +32,7 @@ int main(void)
 	 *                           SYSTEM INITIALIZATION                              *
 	 ********************************************************************************/
 
-	SREG |= (1<<7);			/* Enable interrupts by setting I-bit */
+	SREG |= (1<<7);		  /* Enable interrupts by setting I-bit */
 
 	/* Interrupts Initialization */
 	INT0_Init();
