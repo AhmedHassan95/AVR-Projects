@@ -182,8 +182,7 @@ void TIMER_init(const TIMER_ConfigType * Config_Ptr)
 		 * - Non PWM mode (FOC0 = 1) in TCCR0 register
 		 * - Normal Mode  (WGM00 = 0 & WGM01 = 0) in TCCR0 register
 		 * - Normal Mode  (COM01 = 0 & COM00 = 0) in TCCR0 register
-		 * - Insert the required Clock in the First three bits (CS02, CS01, CS00)
-		 *   in TCCR0 register
+		 * - Insert the required Clock in the First three bits (CS02, CS01, CS00) in TCCR0 register
 		 * - Enable TIMER0 Overflow Interrupt (TOIE0) bit in TIMSK register
 		 */
 		case NORMAL:
