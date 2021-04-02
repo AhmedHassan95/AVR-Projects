@@ -39,11 +39,11 @@
  *
  * [in]	          None
  *
- * [out]	   None
+ * [out]	  None
  *
- * [in/out]	   None
+ * [in/out]	  None
  *
- * [Returns]:      None
+ * [Returns]:     None
  *******************************************************************************/
 void BUZZER_init(void);
 
@@ -54,11 +54,11 @@ void BUZZER_init(void);
  *
  * [Args]:			None
  *
- * [in]			  	None
+ * [in]			 None
  *
- * [out]		  	None
+ * [out]		 None
  *
- * [in/out]		 	None
+ * [in/out]		None
  *
  * [Returns]:       None
  *******************************************************************************/
