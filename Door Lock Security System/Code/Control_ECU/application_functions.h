@@ -206,11 +206,11 @@ void APP_stopMotor(void);
  *
  * [in]	 	 None
  *
- * [out]     None
+ * [out]       None
  *
  * [in/out]	  None
  *
- * [Returns]:      None
+ * [Returns]:     None
  ***********************************************************************************/
 void APP_rotateMotorAntiCW(void);
 
