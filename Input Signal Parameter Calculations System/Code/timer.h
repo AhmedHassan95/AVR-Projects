@@ -41,9 +41,9 @@ void TIMER1_overFlow_init(void);
  *
  * [Description]:   Function to clear the Timer1 Value to start count from ZERO
  *
- * [Args]: None
+ * [Args]:    None
  *
- * [in]			None
+ * [in]	None
  *
  * [out]	 None
  *
