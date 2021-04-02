@@ -39,8 +39,8 @@
 #define ANY_TIME_TO_LOGIN   	    0		/* Any time to login to the system */
 #define FIRST_TIME_TO_LOGIN	    1		/* First time to login to the system */
 
-#define MATCHED                 	0		/* Two password are matched */
-#define MISMATCHED          	1		/* Two password are not matched */
+#define MATCHED               	0		/* Two password are matched */
+#define MISMATCHED             	1		/* Two password are not matched */
 
 #define NO_ATTEMPT				          0		/* There are not attempt yet */
 #define MAXIMUM_ATTEMPTS   		   3		/* Maximum wrong attempts to enter the system */
