@@ -42,8 +42,8 @@
 #define MATCHED            		0		/* Two password are matched */
 #define MISMATCHED         		1		/* Two password are not matched */
 
-#define NO_ATTEMPT				0		/* There are not attempt yet */
-#define MAXIMUM_ATTEMPTS   		3		/* Maximum wrong attempts to enter the system */
+#define NO_ATTEMPT				          0		/* There are not attempt yet */
+#define MAXIMUM_ATTEMPTS   		   3		/* Maximum wrong attempts to enter the system */
 
 #define  INITIAL_VALUE          0       /* Initial value to start the timer count from it */
 #define  FIRST_TICK             1		/* First time the interrupt occurred */
