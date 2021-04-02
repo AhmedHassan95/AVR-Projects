@@ -191,9 +191,9 @@ void APP_rotateMotorCW(void);
  *
  * [out]	 None
  *
- * [in/out] 	None
+ * [in/out] 	 None
  *
- * [Returns]:     None
+ * [Returns]:    None
  ***********************************************************************************/
 void APP_stopMotor(void);
 
