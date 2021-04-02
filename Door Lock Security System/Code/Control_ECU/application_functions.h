@@ -183,15 +183,15 @@ void APP_rotateMotorCW(void);
 /***********************************************************************************
  * [Function Name]: APP_stopMotor
  *
- * [Description]:  Function to stop the Motor
+ * [Description]: Function to stop the Motor
  *
  * [Args]:	None
  *
- * [in]			 None
+ * [in]		None
  *
  * [out]	 None
  *
- * [in/out]		None
+ * [in/out]	None
  *
  * [Returns]:       None
  ***********************************************************************************/
