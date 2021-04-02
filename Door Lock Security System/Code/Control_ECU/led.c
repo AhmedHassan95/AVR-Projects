@@ -19,17 +19,17 @@
 /*******************************************************************************
  * [Function Name]: LED_init
  *
- * [Description]: 	Function to Initialize the LED Driver
+ * [Description]: Function to Initialize the LED Driver
  *
- * [Args]:			None
+ * [Args]:	  None
  *
- * [in]			  	None
+ * [in]		  None
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  *******************************************************************************/
 void LED_init(void)
 {
@@ -42,17 +42,17 @@ void LED_init(void)
 /*******************************************************************************
  * [Function Name]: LED_turnOn
  *
- * [Description]: 	Function to turn on the LED
+ * [Description]: Function to turn on the LED
  *
- * [Args]:			None
+ * [Args]:        None
  *
- * [in]			  	None
+ * [in]		  None
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  *******************************************************************************/
 void LED_turnOn(void)
 {
@@ -62,17 +62,17 @@ void LED_turnOn(void)
 /*******************************************************************************
  * [Function Name]: LED_turnOff
  *
- * [Description]: 	Function to turn off the LED
+ * [Description]: Function to turn off the LED
  *
- * [Args]:			None
+ * [Args]:	  None
  *
- * [in]			  	None
+ * [in]	          None
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  *******************************************************************************/
 void LED_turnOff(void)
 {
