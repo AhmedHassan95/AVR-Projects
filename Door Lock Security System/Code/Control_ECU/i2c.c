@@ -19,21 +19,21 @@
 /********************************************************************************************
  * [Function Name]: TWI_init
  *
- * [Description]: 	Function to Initialize the TWI (I2C) Driver
- *			- Decide Bit Rate of the TWI (100k BPS, 400k BPS, 1M BPS)
- * 			- Decide Pre-scaler of the TWI (1, 4, 16, 64)
- * 			- Decide the Address of MCU (If any device need to contact with it)
- * 			- Enable TWI Module
+ * [Description]: Function to Initialize the TWI (I2C) Driver
+ *		 - Decide Bit Rate of the TWI (100k BPS, 400k BPS, 1M BPS)
+ * 		 - Decide Pre-scaler of the TWI (1, 4, 16, 64)
+ * 		 - Decide the Address of MCU (If any device need to contact with it)
+ * 		 - Enable TWI Module
  *
- * [Args]:		Config_Ptr
+ * [Args]:	 Config_Ptr
  *
- * [in]			Config_Ptr: Pointer to TWI Configuration Structure
+ * [in]		 Config_Ptr: Pointer to TWI Configuration Structure
  *
- * [out]		None
+ * [out]	 None
  *
- * [in/out]		None
+ * [in/out]	 None
  *
- * [Returns]:       	None
+ * [Returns]:    None
  ********************************************************************************************/
 void TWI_init(const TWI_ConfigType * Config_Ptr)
 {
