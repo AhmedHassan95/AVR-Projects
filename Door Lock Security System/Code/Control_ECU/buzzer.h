@@ -77,7 +77,7 @@ void BUZZER_turnOn(void);
  *
  * [in/out]	 None
  *
- * [Returns]:      None
+ * [Returns]:     None
  *******************************************************************************/
 void BUZZER_turnOff(void);
 
