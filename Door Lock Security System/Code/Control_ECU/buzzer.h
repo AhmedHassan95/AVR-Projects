@@ -58,9 +58,9 @@ void BUZZER_init(void);
  *
  * [out]	  None
  *
- * [in/out]	   None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:      None
  *******************************************************************************/
 void BUZZER_turnOn(void);
 
@@ -71,11 +71,11 @@ void BUZZER_turnOn(void);
  *
  * [Args]:			None
  *
- * [in]			 None
+ * [in]		 None
  *
- * [out]			None
+ * [out]		None
  *
- * [in/out]		None
+ * [in/out]	None
  *
  * [Returns]:       None
  *******************************************************************************/
