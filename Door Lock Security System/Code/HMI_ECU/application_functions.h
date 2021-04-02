@@ -98,16 +98,16 @@ void APP_setNewPassword(uint8 a_systemStatus);
  * [Function Name]: APP_getPassword
  *
  * [Description]: Function to get password from the User
- *					- Store password consists of 5 digits in a global array
+ *			- Store password consists of 5 digits in a global array
  * 			- Give the User two options ('=' : TO SUBMIT, 'X' : TO CLEAR)
  *
  * [Args]:		Password_Ptr
  *
- * [in]				Password_Ptr: Pointer to character
+ * [in]			Password_Ptr: Pointer to character
  *
- * [out]		 None
+ * [out]		None
  *
- * [in/out]		None
+ * [in/out]	None
  *
  * [Returns]:     None
  ********************************************************************************/
