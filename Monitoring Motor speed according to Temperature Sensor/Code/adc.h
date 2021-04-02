@@ -43,13 +43,13 @@ extern volatile uint16 g_adcResult;
  *
  * [Description]:   Function responsible for initializing the ADC driver
  *
- * [Args]:	None
+ * [Args]:	   None
  *
  * [in]			None
  *
  * [out]		None
  *
- * [in/out]	None
+ * [in/out]	   None
  *
  * [Returns]:       None
  *******************************************************************************/
