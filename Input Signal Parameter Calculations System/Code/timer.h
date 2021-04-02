@@ -43,7 +43,7 @@ void TIMER1_overFlow_init(void);
  *
  * [Args]:     None
  *
- * [in]	  None
+ * [in]	     None
  *
  * [out]	 None
  *
