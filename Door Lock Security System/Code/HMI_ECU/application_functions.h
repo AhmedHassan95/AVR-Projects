@@ -86,11 +86,11 @@ extern uint8 g_wrongAttempts;            /* Global variable to store the number 
  *
  * [in]		a_systemStatus: Unsigned Character (store the password status)
  *
- * [out]       None
+ * [out]        None
  *
  * [in/out]	 None
  *
- * [Returns]:   None
+ * [Returns]:    None
  ********************************************************************************/
 void APP_setNewPassword(uint8 a_systemStatus);
 
