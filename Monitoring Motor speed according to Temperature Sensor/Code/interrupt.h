@@ -23,7 +23,7 @@
 /*******************************************************************************
  * [Function Name]: INT1_init
  *
- * [Description]:   Function to enable and configure External INT1
+ * [Description]:  Function to enable and configure External INT1
  *
  * [Args]:   	   None
  *
