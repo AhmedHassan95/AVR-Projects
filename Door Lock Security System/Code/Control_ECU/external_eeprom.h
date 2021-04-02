@@ -51,11 +51,11 @@ void EEPROM_init(void);
  * [Args]:	u16addr, u8data
  *
  * [in]		 u16addr: Unsigned Short (EEPROM Byte Address)
- * 				u8data:	 Unsigned Character (Data need to be written in the EEPROM)
+ * 		u8data:	 Unsigned Character (Data need to be written in the EEPROM)
  *
- * [out]		Unsigned Character
+ * [out]	Unsigned Character
  *
- * [in/out]		None
+ * [in/out]	None
  *
  * [Returns]:     Status of this function (SUCCESS, ERROR)
  *******************************************************************************/
