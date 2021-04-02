@@ -13,7 +13,7 @@
 #include "interrupt.h"
 
 /**********************************************************************************************
- *                             		 Global Variables                                         *
+ *                             		 Global Variables                                     *
  **********************************************************************************************/
 
 unsigned char seconds = 0;	/* Global variable to store the number of seconds */
@@ -22,7 +22,7 @@ unsigned char hours = 0;	/* Global variable to store the number of hours */
 
 /**********************************************************************************************/
 /**********************************************************************************************
- *                      		    ISR's Definitions                      		              *
+ *                                       ISR's Definitions                                    *
  **********************************************************************************************/
 ISR(INT0_vect)
 {
@@ -67,7 +67,7 @@ ISR(INT2_vect)
  *
  * [in/out]		 	None
  *
- * [Returns]:       None
+ * [Returns]:       		None
  **********************************************************************************************/
 void INT0_Init(void)
 {
@@ -93,7 +93,7 @@ void INT0_Init(void)
  *
  * [in/out]		 	None
  *
- * [Returns]:       None
+ * [Returns]:       		None
  **********************************************************************************************/
 void INT1_Init(void)
 {
@@ -117,7 +117,7 @@ void INT1_Init(void)
  *
  * [in/out]		 	None
  *
- * [Returns]:       None
+ * [Returns]:      	        None
  **********************************************************************************************/
 void INT2_Init(void)
 {
@@ -125,5 +125,5 @@ void INT2_Init(void)
 	PORTB |= (1<<PB2);	/* Enable the internal pull up resistor at PB2 */
 	GICR |= (1<<INT2);	/* Enable external interrupt pin INT2 */
 	MCUCSR &= ~(1<<ISC2);	/* Trigger INT2 with the falling edge */
-	SREG |= (1<<7);			/* Enable interrupts by setting I-bit */
+	SREG |= (1<<7);		/* Enable interrupts by setting I-bit */
 }
