@@ -30,11 +30,11 @@
 #define ANY_TIME_TO_LOGIN   	0		/* Any time to login to the system */
 #define FIRST_TIME_TO_LOGIN 	1		/* First time to login in the system */
 
-#define MATCHED            		0		/* Two passwords are matched */
-#define MISMATCHED         		1		/* Two passwords are not matched */
+#define MATCHED           0		/* Two passwords are matched */
+#define MISMATCHED       	1		/* Two passwords are not matched */
 
-#define NO_ATTEMPT				0		/* There are not try yet */
-#define MAXIMUM_ATTEMPTS   		3		/* Maximum wrong attempts to enter the system */
+#define NO_ATTEMPT			0		/* There are not try yet */
+#define MAXIMUM_ATTEMPTS   	3		/* Maximum wrong attempts to enter the system */
 
 #define  INITIAL_VALUE          0       /* Initial value to start the timer count from it */
 #define  COUNT_ONE_SECOND       8000    /* Number be loaded in the timer to count 1S */
