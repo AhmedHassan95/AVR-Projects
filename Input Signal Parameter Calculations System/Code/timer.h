@@ -22,7 +22,7 @@
 /********************************************************************************
  * [Function Name]: TIMER1_overFlow_init
  *
- * [Description]:   Function to enable and configure Timer1
+ * [Description]:  Function to enable and configure Timer1
  *
  * [Args]:	   None
  *
@@ -32,7 +32,7 @@
  *
  * [in/out]	   None
  *
- * [Returns]:       None
+ * [Returns]:      None
  ********************************************************************************/
 void TIMER1_overFlow_init(void);
 
@@ -41,13 +41,13 @@ void TIMER1_overFlow_init(void);
  *
  * [Description]:   Function to clear the Timer1 Value to start count from ZERO
  *
- * [Args]:			None
+ * [Args]:	None
  *
- * [in]			  	None
+ * [in]				None
  *
- * [out]		  	None
+ * [out]		 None
  *
- * [in/out]		 	None
+ * [in/out]		None
  *
  * [Returns]:       None
  ********************************************************************************/
