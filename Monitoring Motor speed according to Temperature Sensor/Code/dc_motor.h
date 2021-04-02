@@ -58,7 +58,7 @@
  *
  * [in/out]		 	None
  *
- * [Returns]:              None
+ * [Returns]:                 None
  ********************************************************************************/
 void PWM_Timer0_Init(uint8 set_duty_cycle);
 
