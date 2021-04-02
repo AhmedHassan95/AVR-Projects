@@ -22,15 +22,15 @@
  *******************************************************************************/
 
 #define MAXIMUM_SPEED 		   255	/* Duty cycle 100% */
-#define THREE_QUARTERS_SPEED   192	/* Duty cycle 75% */
-#define HALF_MAXIMUM_SPEED     128	/* Duty cycle 50% */
+#define THREE_QUARTERS_SPEED     192	/* Duty cycle 75% */
+#define HALF_MAXIMUM_SPEED       128	/* Duty cycle 50% */
 #define QUARTER_SPEED   	   64	/* Duty cycle 25% */
 
 #define CLOCKWISE   	  	   1	/* Set Pin 0 in PORTB with value 0 & Pin 1 in PORTB with value 1 */
 #define ANTI_CLOCKWISE     	   2	/* Set Pin 0 in PORTB with value 1 & Pin 1 in PORTB with value 0 */
 
-#define ZERO_TEMP 		   	   0	/* Temperature = 0 */
-#define LOW_TEMP		   	   256	/* Low Temperature	(quarter range of the sensor)*/
+#define ZERO_TEMP 		   	 0	/* Temperature = 0 */
+#define LOW_TEMP		   	 256	/* Low Temperature	(quarter range of the sensor)*/
 #define MODERAT_TEMP      	   512	/* Moderate Temperature (half range of the sensor)*/
 #define HIGH_TEMP   		   768	/* High Temperature	(Three quarters range of the sensor)*/
 
