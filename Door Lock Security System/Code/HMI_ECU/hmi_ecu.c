@@ -4,65 +4,60 @@
  *
  * [AUTHOR(S)] : Ahmed Hassan
  *
- * [DATE CREATED]: Mar 11, 2021
+ * [DATE CREATED]: Mar 11, 2021 
  *
  * [DESCRIPTION]: This Project is to design a Door Lock Security System consists of two ECU's.The
- * 				  First ECU is called HMI (Human Machine Interface) ECU responsible for interfacing
- * 				  with the user through "KEYPAD + LCD" to take the user password.
- * 				  The Second ECU is called CONTROL ECU connected with "DC MOTOR" to open and close
- * 				  the door, Alarm System "BUZZER + LED" to alert if a stranger trying to open the
- * 				  door, and "External EEPROM" to store the user password.The two ECU's communicate
- * 				  with each other through UART Protocol.
+ * 		  First ECU is called HMI (Human Machine Interface) ECU responsible for interfacing
+ * 		  with the user through "KEYPAD + LCD" to take the user password.
+ * 		  The Second ECU is called CONTROL ECU connected with "DC MOTOR" to open and close
+ * 		  the door, Alarm System "BUZZER + LED" to alert if a stranger trying to open the
+ * 		  door, and "External EEPROM" to store the user password.The two ECU's communicate
+ * 		  with each other through UART Protocol.
  *
  *
- * 				   The First ECU is called HMI (Human Machine Interface) ECU responsible for
- * 				   	- Getting the system status from the CONTROL ECU.
- * 				   	- Taking a new password from the user two times.
- * 				   	- Sending the password to the CONTROL ECU to store it in the EEPROM.
- * 				   	- Displaying two options to the user "+" (TO CHANGE PASSWORD),
- * 				   	  and "-" (TO OPEN DOOR).
- * 				   	- Sending the user option to the CONTROL ECU.
+ * 		  The First ECU is called HMI (Human Machine Interface) ECU responsible for
+ * 		   - Getting the system status from the CONTROL ECU.
+ * 		   - Taking a new password from the user two times.
+ * 	           - Sending the password to the CONTROL ECU to store it in the EEPROM.
+ * 		   - Displaying two options to the user "+" (TO CHANGE PASSWORD), and "-" (TO OPEN DOOR).
+ * 		   - Sending the user option to the CONTROL ECU.
  *
- * 				   Design Considerations for HMI ECU:
+ * 		  Design Considerations for HMI ECU:
  *
- *	 	 	 		 - AVR MCU ATmega 16 (F_CPU = 8 MHZ).
- *			     	 - Communicate with the CONTROL ECU through the UART Protocol.
- *			     	 - LCD (4 * 16) connected to PORTC
- *			     	 - KEYPAD connected to PORTA
- *					 - TIMER1 is used to count the "DOOR OPENING & CLOSING" time, and
- *					   "ALARM SYSTEM" time.
+ *	 	   - AVR MCU ATmega 16 (F_CPU = 8 MHZ).
+ *		   - Communicate with the CONTROL ECU through the UART Protocol.
+ *	           - LCD (4 * 16) connected to PORTC
+ *		   - KEYPAD connected to PORTA
+ *		   - TIMER1 is used to count the "DOOR OPENING & CLOSING" time, and "ALARM SYSTEM" time.
  *
  *                The sequence of the HMI ECU Program:
  *
- *                 	Phase 1:
- * 				   	 - Get the system status from the CONTROL ECU.
- * 				   	 - If this is the first time to login to the system, take a new password
- * 				   	   two times.
- * 				   	 - Check if these two passwords are identical or not.
- *						- If the two passwords are identical, sending the password to the Control
- *						  ECU to store it in the EEPROM.
- * 				   		- If the two passwords are not identical, still in this step until
- * 				   		  be identical.
+ *                Phase 1:
+ * 		  - Get the system status from the CONTROL ECU.
+ * 		  - If this is the first time to login to the system, take a new password two times.
+ * 		  - Check if these two passwords are identical or not.
+ *                - If the two passwords are identical, sending the password to the Control ECU to store it in the EEPROM.
+ * 		  - If the two passwords are not identical, still in this step until be identical.
  *
- *					Phase 2:
- *					 - If this is not the first time to login to the system, give the user two
- *					   options "+" (TO CHANGE PASSWORD), "-" (TO OPEN DOOR).
+ *		  Phase 2:
+ *		  - If this is not the first time to login to the system, give the user two
+ *		    options "+" (TO CHANGE PASSWORD), "-" (TO OPEN DOOR).
  *
- *					Phase 3:
- *					 - User choice is (TO CHANGE PASSWORD)
- *					 - Ask the user for the current password
- *					   	  - If it is matched with the old one, Change the password.
- *					   	  - If it is unmatched with the old one, tell the user to try again
- *							(for two additional times), it is still unmatched count the
- *							Alarm system time (15 Seconds).
+ *		  Phase 3:
+ *		  - User choice is (TO CHANGE PASSWORD)
+ *		  - Ask the user for the current password
+ *	          - If it is matched with the old one, Change the password.
+ *	          - If it is unmatched with the old one, tell the user to try again
+ *		    (for two additional times), it is still unmatched count the Alarm
+ *                   system time (15 Seconds).
  *
- *		            Phase 4:
- *					 - User choice is (TO OPEN DOOR)
- *					 - Ask the user for the current password
- *					   	  - If it is matched with the old one, Open the door.
- *					   	  - If it is unmatched with the old one, tell the user to try again
- *							(for two additional times), it is still unmatched count the
- *							Alarm system time (15 Seconds).
+ *		  Phase 4:
+ *	          - User choice is (TO OPEN DOOR)
+ *	          - Ask the user for the current password
+ *		  - If it is matched with the old one, Open the door.
+ *		  - If it is unmatched with the old one, tell the user to try again
+ *	            (for two additional times), it is still unmatched count the 
+ *		     Alarm system time (15 Seconds).
  *
  *****************************************************************************************/
 
@@ -72,7 +67,7 @@
  *                    Global Variables  (Private to this File)                           *
  *****************************************************************************************/
 
-static uint8 g_choice;			/* Global variable to store the user choice */
+static uint8 g_choice;		/* Global variable to store the user choice */
 static uint8 g_passwordStatus;	/* Global variable to store the current password status */
 
 /*****************************************************************************************
@@ -93,9 +88,9 @@ int main(void)
 	/* TIMER Driver Configurations */
 	TIMER_ConfigType TIMER_Config = {INITIAL_VALUE,COUNT_ONE_SECOND,TIMER_1,COMPARE,T1_F_CPU_1024};
 
-	UART_init(&UART_Config); /* UART Driver Initialization */
+	UART_init(&UART_Config); 	/* UART Driver Initialization */
 
-	SREG |= (1 << 7);	/* Enable Global Interrupt, I-bit in SREG register */
+	SREG |= (1 << 7);		/* Enable Global Interrupt, I-bit in SREG register */
 
 	UART_sendByte(ECU_READY);	/* Check if the Control ECU is ready */
 
@@ -108,15 +103,15 @@ int main(void)
 	/*
 	 * Check the system status:
 	 *
-	 * 		- If this is the first time to run the system, make the following steps:
-	 * 		  	1- Initialize the system (For the first time)
-	 * 		    2- Take new password from the user for two times
-	 * 		 	3- Compare between these two passwords
-	 * 		  	4- If two passwords are identical, send password to the Control ECU to be
-	 * 		  	    stored in the EEPROM
-	 * 		  	5- If two passwords are not identical, repeat these steps again
+	 * 	- If this is the first time to run the system, make the following steps:
+	 * 		 1- Initialize the system (For the first time)
+	 * 		 2- Take new password from the user for two times
+	 * 		 3- Compare between these two passwords
+	 * 		 4- If two passwords are identical, send password to the Control ECU to be
+	 * 		    stored in the EEPROM
+	 * 		 5- If two passwords are not identical, repeat these steps again
 	 *
-	 * 		- If this is not the first time to run the system, skip this condition
+	 *      - If this is not the first time to run the system, skip this condition
 	 */
 	if (g_systemStatus == FIRST_TIME_TO_LOGIN)
 	{
@@ -124,13 +119,13 @@ int main(void)
 	}
 
 	/********************************************************************************
-	 *                        APPLICATION	(SUPER LOOP)						    *
+	 *                        APPLICATION	(SUPER LOOP)			        *
 	 ********************************************************************************/
 
 	while(1)
 	{
 		/********************************************************************************
-		 *                             USER DECISION								    *
+		 *                             USER DECISION				        *
 		 ********************************************************************************/
 
 		/*
@@ -141,7 +136,7 @@ int main(void)
 		g_choice = APP_getUserDecision();
 
 		while(UART_recieveByte() != ECU_READY){}	/* Wait until Control ECU be ready */
-		UART_sendByte(g_choice);					/* Send the user choice to the Control ECU */
+		UART_sendByte(g_choice);			/* Send the user choice to the Control ECU */
 
 		LCD_clearScreen();	/* Display message to the user to enter the current password */
 		LCD_displayStringRowColumn(0, 4, "ENTER CURRENT");
@@ -149,7 +144,7 @@ int main(void)
 
 
 		/********************************************************************************
-		 *                    FIRST CHOICE : CHANGE SYSTEM PASSWORD				 	    *
+		 *                    FIRST CHOICE : CHANGE SYSTEM PASSWORD		        *
 		 ********************************************************************************/
 
 		/*
@@ -180,8 +175,8 @@ int main(void)
 				 *	If the current and the old password are identical, call function that is
 				 *	responsible for doing the following steps:
 				 *
-				 * 		- Take new password from the user for two times
-				 *	 	- Compare between these two passwords
+				 * 	- Take new password from the user for two times
+				 *	- Compare between these two passwords
 				 *   	- If two passwords are identical, send password to the Control ECU to be
 				 *   	  stored in the EEPROM
 				 *      - If two passwords are not identical, repeat these steps again
@@ -202,14 +197,14 @@ int main(void)
 				 *	If the current and the old password are not identical, call function that is
 				 *	responsible for doing the following steps:
 				 *
-				 *		- Increment the number of wrong attempts
-				 *		- Display the message "INCORRECT PASSWORD"
-				 *		- Check the number of wrong attempts:
-				 *			1- If it is not equal to MAXIMUM NUMBER OF ATTEMPTS, return
-				 *		       from the function to get the password again from the user
-				 *			2- If it is equal to MAXIMUM NUMBER OF ATTEMPTS, count the alarm time
-				 *			   and hold the system for (15 Seconds), then return back to the MAIN
-				 *			   LOOP again
+				 *	- Increment the number of wrong attempts
+				 *	- Display the message "INCORRECT PASSWORD"
+				 *	- Check the number of wrong attempts:
+				 *		1- If it is not equal to MAXIMUM NUMBER OF ATTEMPTS, return
+				 *		   from the function to get the password again from the user
+				 *		2- If it is equal to MAXIMUM NUMBER OF ATTEMPTS, count the alarm time
+				 *	           and hold the system for (15 Seconds), then return back to the MAIN
+				 *		   LOOP again
 				 */
 				else if(g_passwordStatus == MISMATCHED)
 				{
@@ -246,7 +241,7 @@ int main(void)
 				g_passwordStatus = UART_recieveByte();
 
 				/********************************************************************************
-				 *                 CASE 1:  CORRECT PASSWORD  (USER IS THE OWNER)  		        *
+				 *                 CASE 1:  CORRECT PASSWORD  (USER IS THE OWNER)  		*
 				 ********************************************************************************/
 
 				/*
@@ -347,14 +342,14 @@ int main(void)
 				 *	If the current and the old password are not identical, call function that is
 				 *	responsible for doing the following steps:
 				 *
-				 *		- Increment the number of wrong attempts
-				 *		- Display the message "INCORRECT PASSWORD"
-				 *		- Check the number of wrong attempts:
-				 *			1- If it is not equal to MAXIMUM NUMBER OF ATTEMPTS, return
-				 *		       from the function to get the password again from the user
-				 *			2- If it is equal to MAXIMUM NUMBER OF ATTEMPTS, count the alarm time
-				 *			   and hold the system for (15 Seconds), then return back to the MAIN
-				 *			   LOOP again
+				 *	- Increment the number of wrong attempts
+				 *	- Display the message "INCORRECT PASSWORD"
+				 *	- Check the number of wrong attempts:
+				 *		1- If it is not equal to MAXIMUM NUMBER OF ATTEMPTS, return
+				 *		   from the function to get the password again from the user
+				 *		2- If it is equal to MAXIMUM NUMBER OF ATTEMPTS, count the alarm time
+				 *	           and hold the system for (15 Seconds), then return back to the MAIN
+				 *	           LOOP again
 				 */
 				else if(g_passwordStatus == MISMATCHED)
 				{
