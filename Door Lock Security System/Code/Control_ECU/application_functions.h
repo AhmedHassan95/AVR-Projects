@@ -36,7 +36,7 @@
 #define STORE_TIME     		    100 	/* Time taken for storing 1 Byte in the EEPROM */
 #define READ_TIME     		    100 	/* Time taken for reading 1 Byte in the EEPROM */
 
-#define ANY_TIME_TO_LOGIN   	     0		/* Any time to login to the system */
+#define ANY_TIME_TO_LOGIN   	    0		/* Any time to login to the system */
 #define FIRST_TIME_TO_LOGIN	    1		/* First time to login to the system */
 
 #define MATCHED           	0		/* Two password are matched */
