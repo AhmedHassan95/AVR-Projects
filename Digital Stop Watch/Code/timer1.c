@@ -13,7 +13,7 @@
 #include "timer1.h"
 
 /****************************************************************************************
- *                      		    ISR's Definitions                      		        *
+ *                                  ISR's Definitions                                   *
  ****************************************************************************************/
 ISR(TIMER1_COMPA_vect)
 {
@@ -36,7 +36,7 @@ ISR(TIMER1_COMPA_vect)
 }
 
 /****************************************************************************************
- *                         		 Functions Definitions                                  *
+ *                                    Functions Definitions                             *
  ****************************************************************************************/
 /****************************************************************************************
  * [Function Name]: Timer1_CTC_Init
@@ -51,12 +51,12 @@ ISR(TIMER1_COMPA_vect)
  *
  * [in/out]		 	None
  *
- * [Returns]:       None
+ * [Returns]:       		None
  ****************************************************************************************/
 void Timer1_CTC_Init(unsigned int tick)
 {
 	TCNT1 = 0;		/* Set Counter initial value to 0 */
-	OCR1A = tick;	/* Set compare value */
+	OCR1A = tick;		/* Set compare value */
 	TIMSK = (1<<OCIE1A);	/* Enable Timer 1 Compare A Match Interrupt */
 
 	/* Configure Timer 1 Control Register:
