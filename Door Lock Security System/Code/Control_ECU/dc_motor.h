@@ -73,11 +73,11 @@ void DCMOTOR_rotateClockwise(void);
  *
  * [Description]: Function to force the DC MOTOR to rotate Anti Clockwise
  *
- * [Args]:		None
+ * [Args]:	None
  *
  * [in]		 None
  *
- * [out]	 None
+ * [out]	None
  *
  * [in/out]		None
  *
