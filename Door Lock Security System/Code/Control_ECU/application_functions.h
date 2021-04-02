@@ -34,10 +34,10 @@
 #define ADDRESS_PASSWORD_STORED	    0x000	/* Address where password stored */
 
 #define STORE_TIME     		    100 	/* Time taken for storing 1 Byte in the EEPROM */
-#define READ_TIME     		    100 	/* Time taken for reading 1 Byte in the EEPROM */
+#define READ_TIME     		    100 	 /* Time taken for reading 1 Byte in the EEPROM */
 
 #define ANY_TIME_TO_LOGIN   	    0		/* Any time to login to the system */
-#define FIRST_TIME_TO_LOGIN	    1		/* First time to login to the system */
+#define FIRST_TIME_TO_LOGIN	    1		 /* First time to login to the system */
 
 #define MATCHED                     0	/* Two password are matched */
 #define MISMATCHED                  1		/* Two password are not matched */
@@ -45,20 +45,20 @@
 #define NO_ATTEMPT		    0		/* There are not attempt yet */
 #define MAXIMUM_ATTEMPTS            3		/* Maximum wrong attempts to enter the system */
 
-#define  INITIAL_VALUE             0       /* Initial value to start the timer count from it */
-#define  FIRST_TICK                1		/* First time the interrupt occurred */
+#define  INITIAL_VALUE              0  /* Initial value to start the timer count from it */
+#define  FIRST_TICK                 1		/* First time the interrupt occurred */
 
-#define  UNLOCKED                   0       /* Unlock the system */
+#define  UNLOCKED                   0  /* Unlock the system */
 #define  OPENED                     1		/* System Opened */
 
-#define MAXIMUM_ALARM_TIME          15      /* Maximum time to turn on the Alarm */
+#define MAXIMUM_ALARM_TIME          15  /* Maximum time to turn on the Alarm */
 #define	MAXIMUM_RUNNING_TIME        15		/* Maximum time to turn on the Motor */
-#define MAXIMUM_STOPING_TIME        3		/* Maximum time to turn off the Motor */
+#define MAXIMUM_STOPING_TIME        3		 /* Maximum time to turn off the Motor */
 
 #define  COUNT_ONE_SECOND           8000    /* Number be loaded in the timer to count 1S */
 
 #define CHANGE_PASSWORD     	    43 		/* ACII Code for '+' */
-#define DOOR_OPEN          	    45		/* ACII Code for '-' */
+#define DOOR_OPEN          	    45		  /* ACII Code for '-' */
 
 /**********************************************************************************
  *                             External Variables                                 *
