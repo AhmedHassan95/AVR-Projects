@@ -44,11 +44,11 @@ void INT0_init(void);
  *
  * [Args]:	 a_ptr
  *
- * [in]			a_Ptr: Pointer to function (Receive to the address of application function)
+ * [in]		a_Ptr: Pointer to function (Receive to the address of application function)
  *
- * [out]		 None
+ * [out]		   None
  *
- * [in/out]	None
+ * [in/out]	  None
  *
  * [Returns]:       None
  ********************************************************************************/
