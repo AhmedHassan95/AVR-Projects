@@ -55,21 +55,21 @@ typedef struct
 /******************************************************************************
  * [Function Name]: TIMER_init
  *
- * [Description]: 	Function to initialize the TIMER Driver
- *					- Decide TIMER ID (TIMER0, TIMER1, TIMER2)
- *					- Decide TIMER Mode (NORMAL, COMPARE)
- * 					- Decide TIMER Clock (NO CLOCK, F_CPU CLOCK, F_CPU CLOCK/8, ..)
- * 					- Insert the initial value to start counting from it
- * 					- Insert the compare match value if use this mode (CTC Mode)
- * 					- Enable TIMER Interrupt
+ * [Description]: Function to initialize the TIMER Driver
+ *		  - Decide TIMER ID (TIMER0, TIMER1, TIMER2)
+ *		  - Decide TIMER Mode (NORMAL, COMPARE)
+ * 		  - Decide TIMER Clock (NO CLOCK, F_CPU CLOCK, F_CPU CLOCK/8, ..)
+ * 		  - Insert the initial value to start counting from it
+ * 		  - Insert the compare match value if use this mode (CTC Mode)
+ * 		  - Enable TIMER Interrupt
  *
- * [Args]:			Config_Ptr
+ * [Args]:	    Config_Ptr
  *
- * [in]			  	Config_Ptr: Pointer to TIMER Configuration Structure
+ * [in]		    Config_Ptr: Pointer to TIMER Configuration Structure
  *
- * [out]		  	None
+ * [out]	    None
  *
- * [in/out]		 	None
+ * [in/out]	    None
  *
  * [Returns]:       None
  ******************************************************************************/
@@ -78,52 +78,52 @@ void TIMER_init(const TIMER_ConfigType * Config_Ptr);
 /******************************************************************************
  * [Function Name]: TIMER_setCallBack
  *
- * [Description]: 	Function to set the Call Back function address
+ * [Description]: Function to set the Call Back function address
  *
- * [Args]:			a_Ptr, a_timerID
+ * [Args]:	  a_Ptr, a_timerID
  *
- * [in]				a_Ptr: Pointer to function (Receive to the address of application function)
- * 					a_timerID: Enumerator to TIMER ID
+ * [in]		  a_Ptr: Pointer to function (Receive to the address of application function)
+ * 		  a_timerID: Enumerator to TIMER ID
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ******************************************************************************/
 void TIMER_setCallBack(void(*a_ptr)(void), const TIMER_ID a_timerID);
 
 /******************************************************************************
  * [Function Name]: TIMER_stop
  *
- * [Description]:   Function to stop the TIMER from counting
+ * [Description]: Function to stop the TIMER from counting
  *
- * [Args]:			a_timerID
+ * [Args]:	  a_timerID
  *
- * [in]				a_timerID: Enumerator to TIMER ID
+ * [in]		  a_timerID: Enumerator to TIMER ID
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ******************************************************************************/
 void TIMER_stop(const TIMER_ID a_timerID);
 
 /******************************************************************************
  * [Function Name]: TIMER_DeInit
  *
- * [Description]: 	Function to disable the TIMER Driver
+ * [Description]: Function to disable the TIMER Driver
  *
- * [Args]:			a_timerID
+ * [Args]:	  a_timerID
  *
- * [in]				a_timerID: Enumerator to TIMER ID
+ * [in]		  a_timerID: Enumerator to TIMER ID
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ******************************************************************************/
 void TIMER_DeInit(const TIMER_ID a_timerID);
 
