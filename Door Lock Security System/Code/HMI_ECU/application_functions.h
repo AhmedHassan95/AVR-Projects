@@ -47,9 +47,9 @@
 #define MAXIMUM_STOPING_TIME    3		/* Maximum time to turn off the Motor */
 
 #define CHANGE_PASSWORD     	43 		/* ACII Code for '+' */
-#define DOOR_OPEN         45		/* ACII Code for '-' */
+#define DOOR_OPEN            45		/* ACII Code for '-' */
 
-#define PRESS_TIME        350		/* Time taken for each press */
+#define PRESS_TIME           350		/* Time taken for each press */
 #define LONG_DISPLAY_TIME       800		/* Long Time taken for displaying message in the screen */
 #define SHORT_DISPLAY_TIME      500		/* Short Time taken for displaying message in the screen */
 
