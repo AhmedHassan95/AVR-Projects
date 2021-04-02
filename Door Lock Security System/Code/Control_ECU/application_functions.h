@@ -102,11 +102,11 @@ uint8 APP_checkPasswordMismatch(uint8 * Password1_Ptr , uint8 * Password2_Ptr);
  *
  * [in]	         Password_Ptr: Pointer to character
  *
- * [out]     None
+ * [out]        None
  *
- * [in/out]	None
+ * [in/out]	 None
  *
- * [Returns]:     None
+ * [Returns]:    None
  **********************************************************************************/
 void APP_receiveNewPassword(uint8 * Password_Ptr);
 
