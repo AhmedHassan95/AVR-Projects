@@ -56,7 +56,7 @@ void INT0_Init(void);
  *
  * [in/out]		 	None
  *
- * [Returns]:                  None
+ * [Returns]:                   None
  **********************************************************************************/
 void INT1_Init(void);
 
