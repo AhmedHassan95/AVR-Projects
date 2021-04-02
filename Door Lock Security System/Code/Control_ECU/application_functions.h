@@ -204,9 +204,9 @@ void APP_stopMotor(void);
  *
  * [Args]:	  None
  *
- * [in]	 	 None
+ * [in]	 	  None
  *
- * [out]       None
+ * [out]         None
  *
  * [in/out]	  None
  *
