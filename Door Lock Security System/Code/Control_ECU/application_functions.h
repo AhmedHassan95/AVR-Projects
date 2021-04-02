@@ -113,12 +113,12 @@ void APP_receiveNewPassword(uint8 * Password_Ptr);
 /**********************************************************************************
  * [Function Name]: APP_receiveCurrentPassword
  *
- * [Description]: 	Function to receive the new password from the HMI ECU, and store it
+ * [Description]: Function to receive the new password from the HMI ECU, and store it
  *				  	in the EEPROM
  *
- * [Args]:		Password_Ptr
+ * [Args]:	Password_Ptr
  *
- * [in]				 Password_Ptr: Pointer to character
+ * [in]		Password_Ptr: Pointer to character
  *
  * [out]	None
  *
