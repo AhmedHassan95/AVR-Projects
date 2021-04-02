@@ -80,14 +80,14 @@ extern uint8 g_wrongAttempts;                   /* Global variable to store the 
  *
  * [Description]: Function to check if the two passwords are identical or not
  *
- * [Args]:		Password1_Ptr, Password2_Ptr
+ * [Args]:	Password1_Ptr, Password2_Ptr
  *
  * [in]	Password1_Ptr: Pointer to character
  * 					Password2_Ptr: Pointer to character
  *
- * [out]		 Unsigned Character
+ * [out]		Unsigned Character
  *
- * [in/out]			None
+ * [in/out]		None
  *
  * [Returns]:     Result of the comparison between two passwords
  **********************************************************************************/
