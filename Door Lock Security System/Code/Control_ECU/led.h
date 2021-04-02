@@ -77,7 +77,7 @@ void LED_turnOn(void);
  *
  * [in/out]	None
  *
- * [Returns]:     None
+ * [Returns]:   None
  *******************************************************************************/
 void LED_turnOff(void);
 
