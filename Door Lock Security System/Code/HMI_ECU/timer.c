@@ -150,7 +150,7 @@ ISR(TIMER2_COMP_vect)
  *
  * [in/out]	 None
  *
- * [Returns]:     None
+ * [Returns]:    None
  *************************************************************************************/
 void TIMER_init(const TIMER_ConfigType * Config_Ptr)
 {
@@ -179,12 +179,11 @@ void TIMER_init(const TIMER_ConfigType * Config_Ptr)
 
 		/* Configure TIMER0 Register (NORMAL MODE):
 		 *
-		 * 	- Non PWM mode (FOC0 = 1) in TCCR0 register
-		 * 	- Normal Mode  (WGM00 = 0 & WGM01 = 0) in TCCR0 register
-		 * 	- Normal Mode  (COM01 = 0 & COM00 = 0) in TCCR0 register
-		 * 	- Insert the required Clock in the First three bits (CS02, CS01, CS00)
-		 * 	  in TCCR0 register
-		 * 	- Enable TIMER0 Overflow Interrupt (TOIE0) bit in TIMSK register
+		 * - Non PWM mode (FOC0 = 1) in TCCR0 register
+		 * - Normal Mode  (WGM00 = 0 & WGM01 = 0) in TCCR0 register
+		 * - Normal Mode  (COM01 = 0 & COM00 = 0) in TCCR0 register
+		 * - Insert the required Clock in the First three bits (CS02, CS01, CS00) in TCCR0 register
+		 * - Enable TIMER0 Overflow Interrupt (TOIE0) bit in TIMSK register
 		 */
 		case NORMAL:
 
@@ -195,14 +194,13 @@ void TIMER_init(const TIMER_ConfigType * Config_Ptr)
 
 	    /* Configure TIMER0 Register (COMPARE MODE):
 		 *
-		 *	- Insert the required compare value in the OCR0 register, TIMER0 is (8-bit),
-		 *	  so mask the compare value with 0xFF to ensure that it does not exceed 255
-		 * 	- Non PWM Mode (FOC0 = 1) in TCCR0 register
-		 * 	- Compare Mode (WGM00 = 0 & WGM01 = 1) in TCCR0 register
-		 * 	- Normal  Mode (COM01 = 0 & COM00 = 0) in TCCR0 register
-		 * 	- Insert the required Clock in the First three bits (CS02, CS01, CS00)
-		 * 	  in TCCR0 register
-		 * 	- Enable TIMER0 Compare Match Interrupt (OCIE0) bit in TIMSK register
+		 *- Insert the required compare value in the OCR0 register, TIMER0 is (8-bit),
+		 *   so mask the compare value with 0xFF to ensure that it does not exceed 255
+		 * - Non PWM Mode (FOC0 = 1) in TCCR0 register
+		 * - Compare Mode (WGM00 = 0 & WGM01 = 1) in TCCR0 register
+		 * - Normal  Mode (COM01 = 0 & COM00 = 0) in TCCR0 register
+		 * - Insert the required Clock in the First three bits (CS02, CS01, CS00) in TCCR0 register
+		 * - Enable TIMER0 Compare Match Interrupt (OCIE0) bit in TIMSK register
 		 */
 		case COMPARE:
 
@@ -238,14 +236,13 @@ void TIMER_init(const TIMER_ConfigType * Config_Ptr)
 
 		/* Configure TIMER1 Register (NORMAL MODE):
 		 *
-		 * 	- Normal port operation, OC1A/OC1B disconnected
-		 * 	- Normal Mode (COM1A1 = 0 & COM1A0 = 0) in TCCR1A register
-		 * 	- Normal Mode (COM1B1 = 0 & COM1B0 = 0) in TCCR1A register
-		 *  - Non PWM Mode (FOC1A = 1 & FOC1B = 1)  in TCCR1A register
-		 * 	- Normal  Mode (WGM10 = 0 & WGM11 = 0 & WGM12 = 0 & WGM13 = 0)
-		 * 	- Insert the required Clock in the First three bits (CS12, CS11, CS10)
-		 * 	  in TCCR1B register
-		 * 	- Enable TIMER1 Overflow Interrupt (TOIE1) bit in TIMSK register
+		 * - Normal port operation, OC1A/OC1B disconnected
+		 * - Normal Mode (COM1A1 = 0 & COM1A0 = 0) in TCCR1A register
+		 * - Normal Mode (COM1B1 = 0 & COM1B0 = 0) in TCCR1A register
+		 * - Non PWM Mode (FOC1A = 1 & FOC1B = 1)  in TCCR1A register
+		 * - Normal  Mode (WGM10 = 0 & WGM11 = 0 & WGM12 = 0 & WGM13 = 0)
+		 * - Insert the required Clock in the First three bits (CS12, CS11, CS10) in TCCR1B register
+		 * - Enable TIMER1 Overflow Interrupt (TOIE1) bit in TIMSK register
 		 */
 		case NORMAL:
 
@@ -256,16 +253,15 @@ void TIMER_init(const TIMER_ConfigType * Config_Ptr)
 
 		/* Configure TIMER1 Register (COMPARE MODE):
 		 *
-		 *	- Insert the required compare value in the OCR1A register, TIMER1 is (16-bit),
-		 *	  so mask the compare value with 0xFFFF to ensure that it does not exceed 65535
-		 *	- Normal port operation, OC1A/OC1B disconnected
-		 * 	- Normal Mode (COM1A1 = 0 & COM1A0 = 0) in TCCR1A register
-	     * 	- Normal Mode (COM1B1 = 0 & COM1B0 = 0) in TCCR1A register
-		 * 	- Non PWM Mode (FOC1A = 1 & FOC1B = 1)  in TCCR1A register
-		 *	- Compare Mode (WGM10 = 0 & WGM11 = 0 & WGM12 = 1 & WGM13 = 0)
-		 * 	- Insert the required Clock in the First three bits (CS22, CS21, CS20)
-		 * 	  in TCCR1B register
-		 * 	- Enable TIMER2 Compare Match Interrupt (OCIE1A) bit in TIMSK register
+		 * - Insert the required compare value in the OCR1A register, TIMER1 is (16-bit),
+		 *   so mask the compare value with 0xFFFF to ensure that it does not exceed 65535
+		 * - Normal port operation, OC1A/OC1B disconnected
+		 * - Normal Mode (COM1A1 = 0 & COM1A0 = 0) in TCCR1A register
+	     	 * - Normal Mode (COM1B1 = 0 & COM1B0 = 0) in TCCR1A register
+		 * - Non PWM Mode (FOC1A = 1 & FOC1B = 1)  in TCCR1A register
+		 * - Compare Mode (WGM10 = 0 & WGM11 = 0 & WGM12 = 1 & WGM13 = 0)
+		 * - Insert the required Clock in the First three bits (CS22, CS21, CS20) in TCCR1B register
+		 * - Enable TIMER2 Compare Match Interrupt (OCIE1A) bit in TIMSK register
 		 */
 		case COMPARE:
 
@@ -292,7 +288,7 @@ void TIMER_init(const TIMER_ConfigType * Config_Ptr)
 		/*
 		 * Insert the required initial value in the TCNT2 register
 		 * TIMER2 is (8-bit), so mask the initial value with 0xFF to ensure that it
-	     * does not exceed 255
+	    	 * does not exceed 255
 		 */
 		TCNT2 = ( (Config_Ptr -> intialValue) & 0xFF);
 
@@ -301,12 +297,11 @@ void TIMER_init(const TIMER_ConfigType * Config_Ptr)
 
 		/* Configure TIMER2 Register (NORMAL MODE):
 		 *
-		 * 	- Non PWM Mode (FOC2 = 1) in TCCR2 register
-		 * 	- Normal  Mode (WGM20 = 0 & WGM21 = 0) in TCCR2 register
-		 * 	- Normal  Mode (COM21 = 0 & COM20 = 0) in TCCR2 register
-		 * 	- Insert the required Clock in the First three bits (CS22, CS21, CS20)
-		 * 	  in TCCR2 register
-		 * 	- Enable TIMER2 Overflow Interrupt (TOIE2) bit in TIMSK register
+		 * - Non PWM Mode (FOC2 = 1) in TCCR2 register
+		 * - Normal  Mode (WGM20 = 0 & WGM21 = 0) in TCCR2 register
+		 * - Normal  Mode (COM21 = 0 & COM20 = 0) in TCCR2 register
+		 * - Insert the required Clock in the First three bits (CS22, CS21, CS20) in TCCR2 register
+		 * - Enable TIMER2 Overflow Interrupt (TOIE2) bit in TIMSK register
 		 */
 		case NORMAL:
 
@@ -317,14 +312,13 @@ void TIMER_init(const TIMER_ConfigType * Config_Ptr)
 
 		/* Configure TIMER2 Register (COMPARE MODE):
 		 *
-		 *	- Insert the required compare value in the OCR2 register, TIMER2 is (8-bit),
-		 *	  so mask the compare value with 0xFF to ensure that it does not exceed 255
-		 * 	- Non PWM Mode (FOC2 = 1) in TCCR2 register
-		 * 	- Compare Mode (WGM20 = 0 & WGM21 = 1) in TCCR2 register
-		 * 	- Normal  Mode (COM21 = 0 & COM20 = 0) in TCCR2 register
-		 *  - Insert the required Clock in the First three bits (CS22, CS21, CS20)
-		 * 	  in TCCR2 register
-		 * 	- Enable TIMER2 Compare Match Interrupt (OCIE2) bit in TIMSK register
+		 * - Insert the required compare value in the OCR2 register, TIMER2 is (8-bit),
+		 *   so mask the compare value with 0xFF to ensure that it does not exceed 255
+		 * - Non PWM Mode (FOC2 = 1) in TCCR2 register
+		 * - Compare Mode (WGM20 = 0 & WGM21 = 1) in TCCR2 register
+		 * - Normal  Mode (COM21 = 0 & COM20 = 0) in TCCR2 register
+		 * - Insert the required Clock in the First three bits (CS22, CS21, CS20) in TCCR2 register
+		 * - Enable TIMER2 Compare Match Interrupt (OCIE2) bit in TIMSK register
 		 */
 		case COMPARE:
 
@@ -342,18 +336,18 @@ void TIMER_init(const TIMER_ConfigType * Config_Ptr)
 /************************************************************************************
  * [Function Name]: TIMER_setCallBack
  *
- * [Description]:   Function to set the Call Back function address
+ * [Description]: Function to set the Call Back function address
  *
- * [Args]:			a_Ptr, a_timerID
+ * [Args]:	  a_Ptr, a_timerID
  *
- * [in]				a_Ptr: Pointer to function (Receive to the address of application function)
- * 					a_timerID: Enumerator to TIMER ID
+ * [in]		  a_Ptr: Pointer to function (Receive to the address of application function)
+ * 		  a_timerID: Enumerator to TIMER ID
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  *************************************************************************************/
 void TIMER_setCallBack(void(*a_ptr)(void), const TIMER_ID a_timerID)
 {
@@ -383,17 +377,17 @@ void TIMER_setCallBack(void(*a_ptr)(void), const TIMER_ID a_timerID)
 /*************************************************************************************
  * [Function Name]: TIMER_stop
  *
- * [Description]:   Function to stop the TIMER from counting
+ * [Description]: Function to stop the TIMER from counting
  *
- * [Args]:			None
+ * [Args]:	None
  *
- * [in]				None
+ * [in]		None
  *
- * [out]		  	None
+ * [out]	None
  *
- * [in/out]		 	None
+ * [in/out]	None
  *
- * [Returns]:       None
+ * [Returns]:   None
  *******************************************************************************/
 void TIMER_stop(const TIMER_ID a_timerID)
 {
@@ -420,17 +414,17 @@ void TIMER_stop(const TIMER_ID a_timerID)
 /****************************************************************************************
  * [Function Name]: TIMER_DeInit
  *
- * [Description]: 	Function to disable the TIMER Driver
+ * [Description]: Function to disable the TIMER Driver
  *
- * [Args]:			None
+ * [Args]:	  None
  *
- * [in]				None
+ * [in]		  None
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]       None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ****************************************************************************************/
 void TIMER_DeInit(const TIMER_ID a_timerID)
 {
