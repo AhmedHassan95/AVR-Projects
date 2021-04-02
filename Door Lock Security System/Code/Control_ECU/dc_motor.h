@@ -45,9 +45,9 @@
  *
  * [out]	None
  *
- * [in/out]   None
+ * [in/out]     None
  *
- * [Returns]:     None
+ * [Returns]:    None
  *******************************************************************************/
 void DCMOTOR_init(void);
 
