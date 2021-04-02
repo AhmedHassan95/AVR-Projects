@@ -76,11 +76,11 @@ uint16 TIMER1_getTimerValue(void);
  *
  * [Description]:   Function to disable the Timer1
  *
- * [Args]:	  None
+ * [Args]:	   None
  *
  * [in]   	   None
  *
- * [out]	     None
+ * [out]	    None
  *
  * [in/out]	    None
  *
