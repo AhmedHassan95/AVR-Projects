@@ -23,13 +23,13 @@
  *
  * [Args]:	 tick
  *
- * [in]	    tick: Unsigned Character to store the compare value in it
+ * [in]	        tick: Unsigned Character to store the compare value in it
  *
  * [out]	None
  *
  * [in/out]	None
  *
- * [Returns]:    None
+ * [Returns]:  None
  **********************************************************************************/
 void Timer1_CTC_Init(unsigned int tick);
 
