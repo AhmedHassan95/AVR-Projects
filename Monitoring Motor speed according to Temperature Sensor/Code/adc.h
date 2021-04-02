@@ -64,11 +64,11 @@ void ADC_init(void);
  *
  * [Args]:	   channel_num
  *
- * [in]	          channel_num: Unsigned Character to store the channel number in it
+ * [in]	            channel_num: Unsigned Character to store the channel number in it
  * 
- * [out]	    Unsigned Character
+ * [out]	   Unsigned Character
  *
- * [in/out]	     None
+ * [in/out]	    None
  *
  * [Returns]:      The data converted by the ADC
  *******************************************************************************/
@@ -80,7 +80,7 @@ uint16 ADC_readChannel(uint8 channel_num);
  * [Function Name]: ADC_readChannel
  *
  * [Description]:   Function responsible for reading analog data from a certain ADC channel
- * 					            and convert it to digital using the ADC driver
+ * 	 and convert it to digital using the ADC driver
  *
  * [Args]:	 channel_num
  *
