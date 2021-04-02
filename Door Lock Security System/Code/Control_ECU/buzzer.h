@@ -50,15 +50,15 @@ void BUZZER_init(void);
 /*******************************************************************************
  * [Function Name]: BUZZER_turnOn
  *
- * [Description]: 	Function to turn on the BUZZZER
+ * [Description]: Function to turn on the BUZZZER
  *
- * [Args]:			None
+ * [Args]:		None
  *
- * [in]			 None
+ * [in]			None
  *
- * [out]		 None
+ * [out]		None
  *
- * [in/out]		None
+ * [in/out]	None
  *
  * [Returns]:       None
  *******************************************************************************/
