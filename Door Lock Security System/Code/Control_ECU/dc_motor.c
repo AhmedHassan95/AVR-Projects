@@ -20,18 +20,18 @@
  * [Function Name]: DCMOTOR_init
  *
  * [Description]: 	Function to Initialize the DC MOTOR Driver
- *					- Decide DC MOTOR pins direction
- * 					- Turn off DC MOTOR at the beginning as the initial state
+ *			- Decide DC MOTOR pins direction
+ * 			- Turn off DC MOTOR at the beginning as the initial state
  *
- * [Args]:			None
+ * [Args]:		None
  *
- * [in]			  	None
+ * [in]			None
  *
- * [out]		  	None
+ * [out]		None
  *
- * [in/out]		 	None
+ * [in/out]		None
  *
- * [Returns]:       None
+ * [Returns]:       	None
  *******************************************************************************/
 void DCMOTOR_init(void)
 {
@@ -47,17 +47,17 @@ void DCMOTOR_init(void)
 /*******************************************************************************
  * [Function Name]: DCMOTOR_rotateClockwise
  *
- * [Description]: 	Function to force the DC MOTOR to rotate Clockwise
+ * [Description]: Function to force the DC MOTOR to rotate Clockwise
  *
- * [Args]:			None
+ * [Args]:	 None
  *
- * [in]			  	None
+ * [in]		 None
  *
- * [out]		  	None
+ * [out] 	 None
  *
- * [in/out]		 	None
+ * [in/out]	 None
  *
- * [Returns]:       None
+ * [Returns]:    None
  *******************************************************************************/
 void DCMOTOR_rotateClockwise(void)
 {
@@ -69,17 +69,17 @@ void DCMOTOR_rotateClockwise(void)
 /*******************************************************************************
  * [Function Name]: DCMOTOR_rotateAntiClockwise
  *
- * [Description]: 	Function to force the DC MOTOR to rotate Anti Clockwise
+ * [Description]: Function to force the DC MOTOR to rotate Anti Clockwise
  *
- * [Args]:			None
+ * [Args]:	  None
  *
- * [in]			  	None
+ * [in]		  None
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  *******************************************************************************/
 void DCMOTOR_rotateAntiClockwise()
 {
@@ -91,15 +91,15 @@ void DCMOTOR_rotateAntiClockwise()
 /*******************************************************************************
  * [Function Name]: DCMOTOR_stop
  *
- * [Description]: 	Function to stop the DC MOTOR
+ * [Description]: Function to stop the DC MOTOR
  *
- * [Args]:			None
+ * [Args]:	    None
  *
- * [in]			  	None
+ * [in]	            None
  *
- * [out]		  	None
+ * [out]            None
  *
- * [in/out]		 	None
+ * [in/out]	    None
  *
  * [Returns]:       None
  *******************************************************************************/
