@@ -135,7 +135,7 @@ uint8 APP_getUserDecision(void);
  *
  * [Description]: Function to send password to the Control ECU
  *
- * [Args]:	   Password_Ptr
+ * [Args]:	  Password_Ptr
  *
  * [in]		  Password_Ptr: Pointer to character
  *
@@ -143,7 +143,7 @@ uint8 APP_getUserDecision(void);
  *
  * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ********************************************************************************/
 void APP_sendPassword(uint8 * Password_Ptr);
 
