@@ -185,15 +185,15 @@ void APP_rotateMotorCW(void);
  *
  * [Description]: Function to stop the Motor
  *
- * [Args]:	None
+ * [Args]:	 None
  *
- * [in]		None
+ * [in]		 None
  *
  * [out]	 None
  *
- * [in/out]	None
+ * [in/out] 	None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ***********************************************************************************/
 void APP_stopMotor(void);
 
