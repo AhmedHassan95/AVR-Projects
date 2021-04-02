@@ -56,13 +56,13 @@ void DCMOTOR_init(void);
  *
  * [Description]: 	Function to force the DC MOTOR to rotate Clockwise
  *
- * [Args]:			None
+ * [Args]:			 None
+ * 
+ * [in]			   	None
  *
- * [in]			  	None
+ * [out]		  	 None
  *
- * [out]		  	None
- *
- * [in/out]		 	None
+ * [in/out]		 	  None
  *
  * [Returns]:       None
  *******************************************************************************/
