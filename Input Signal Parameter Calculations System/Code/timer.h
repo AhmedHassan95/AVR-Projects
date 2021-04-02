@@ -57,7 +57,7 @@ void TIMER1_clearTimerValue(void);
  * [Function Name]: TIMER1_getTimerValue
  *
  * [Description]:   Function to get the Timer1 Value, to store it in the global variables,
- * 		then use these variables to calculate the Duty Cycle of the signal
+ * 	then use these variables to calculate the Duty Cycle of the signal
  *
  * [Args]:	 None
  *
