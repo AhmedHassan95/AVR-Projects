@@ -41,8 +41,8 @@ int main(void)
 
 	Timer1_CTC_Init(1000); /* Start Counter to count 1 Second */
 
-	DDRC = 0x0F;	  	   /* Configure First 4 pins in PORTC as output pins */
-	DDRA = 0x3F;	 	   /* Configure First 5 pins in PORTA as output pins */
+	DDRC = 0x0F;	       /* Configure First 4 pins in PORTC as output pins */
+	DDRA = 0x3F;	       /* Configure First 5 pins in PORTA as output pins */
 
 	PORTC = PORTC & 0xF0;  /* Set First 4 pins in PORTC with value 0 at the beginning (LEDs OFF) */
 	PORTA = PORTA & 0xC0;  /* Set First 5 pins in PORTA with value 0 to disable All 7-Segments */
