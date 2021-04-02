@@ -120,11 +120,11 @@ void APP_getPassword(uint8 * Password_Ptr);
  *
  * [Args]:        None
  *
- * [in]		None
+ * [in]		 None
  *
- * [out]	Unsigned Character
+ * [out]	 Unsigned Character
  *
- * [in/out]	 None
+ * [in/out]	  None
  *
  * [Returns]:     The User Decision
  ********************************************************************************/
