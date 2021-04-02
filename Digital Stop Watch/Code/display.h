@@ -20,13 +20,13 @@
  *
  * [Description]: Function to display the number in the 7-Segment
  *
- * [Args]:	 value
+ * [Args]:	value
  *
- * [in]		  value: Unsigned Character to be displayed through 7-Segment
+ * [in]		 value: Unsigned Character to be displayed through 7-Segment
  *
- * [out]	   None
+ * [out]  None
  *
- * [in/out] 	 None
+ * [in/out] None
  *
  * [Returns]:  None
  ******************************************************************************/
