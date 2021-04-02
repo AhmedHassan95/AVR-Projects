@@ -88,37 +88,37 @@ static uint8 KeyPad_4x4_adjustKeyNumber(uint8 button_number)
 	switch(button_number)
 	{
 		case 1: return 7; 
-				break;
+			break;
 		case 2: return 8; 
-				break;
+			break;
 		case 3: return 9; 
-				break;
+			break;
 		case 4: return '%'; /* ASCII Code of % */
-				break;
+			break;
 		case 5: return 4; 
-				break;
+			break;
 		case 6: return 5;
-				break;
+			break;
 		case 7: return 6; 
-				break;
+			break;
 		case 8: return '*'; /* ASCII Code of '*' */
-				break;		
+			break;		
 		case 9: return 1; 
-				break;
+			break;
 		case 10: return 2; 
-				break;
+			break;
 		case 11: return 3; 
-				break;
+			break;
 		case 12: return '-'; /* ASCII Code of '-' */
-				break;
+			break;
 		case 13: return 13;  /* ASCII of Enter */
-				break;			
+			break;			
 		case 14: return 0; 
-				break;
+			break;
 		case 15: return '='; /* ASCII Code of '=' */
-				break;
+			break;
 		case 16: return '+'; /* ASCII Code of '+' */
-				break;
+			break;
 		default: return button_number;								 						
 	}
 } 
