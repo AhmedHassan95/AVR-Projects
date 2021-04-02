@@ -88,7 +88,7 @@ uint16 ADC_readChannel(uint8 channel_num);
  *
  * [out]         None
  *
- * [in/out]   	  None
+ * [in/out]   	 None
  *
  * [Returns]:    None
  *******************************************************************************/
