@@ -68,7 +68,7 @@ uint8 EEPROM_writeByte(uint16 u16addr, uint8 u8data);
  *
  * [Args]:	u16addr, u8data
  *
- * [in]	      u16addr: Unsigned Short (Address where the data will be read from the EEPROM)
+ * [in]	        u16addr: Unsigned Short (Address where the data will be read from the EEPROM)
  * 		u8data: Pointer to Character (The data that will read from the EEPROM)
  *
  * [out]	Unsigned Character
