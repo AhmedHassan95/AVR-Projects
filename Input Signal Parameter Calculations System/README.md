@@ -1,7 +1,8 @@
 Signal Parameters Calculation:
 
 This project is Design a system to calculate the duty Cycle of any
-input signal using only Timer and Interrupt, then display the result on LCD (2 * 16).
+input signal using only Timer and Interrupt, then display the result on 
+LCD (2 * 16).
  
   	Design Considerations:
  
