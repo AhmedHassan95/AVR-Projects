@@ -76,10 +76,10 @@ extern uint8 g_wrongAttempts;            /* Global variable to store the number 
  *
  * [Description]: Function to set the new user password
  * 		  - Display a message, if this is the first time to login to the system
- * 		     - Take new password from the user for two times
+ * 		   - Take new password from the user for two times
  * 		 - Compare between these two passwords
  * 		  - If two passwords are identical, send password to the Control ECU to be
- * 		  	  stored in the EEPROM
+ * 		  	 stored in the EEPROM
  * 		  - If two passwords are not identical, repeat these steps again
  *
  * [Args]:	a_systemStatus
