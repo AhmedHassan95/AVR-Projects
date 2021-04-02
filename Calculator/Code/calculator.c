@@ -7,27 +7,27 @@
  * [DATE CREATED] :	Feb 20, 2021
  *
  * [DESCRIPTION] :	This Project is to design a simple calculator to perform the
- * 					simple operations.
- * 					This operations include (Addition, Subtraction, Multiplication,
- * 					Division) between two operands.
+ * 			simple operations.
+ * 			This operations include (Addition, Subtraction, Multiplication,
+ * 			Division) between two operands.
  *
- * 					Design Considerations:
+ * 			Design Considerations:
  *
- * 						- MCU : ATmega 16 (F_CPU = 1 MHZ).
- *						- Display result on LCD (4 * 16) in PORTD.
- *						- Result should consider Negative number, Floating Point,
- *					   	  More than one operand.
+ * 			- MCU : ATmega 16 (F_CPU = 1 MHZ).
+ *			- Display result on LCD (4 * 16) in PORTD.
+ *			- Result should consider Negative number, Floating Point,
+ *			  More than one operand.
  *
  *
- *	Note: "Project doesn't work correctly without these Steps"
+ * Note: "Project doesn't work correctly without these Steps"
  *
- *	As “There is no Floating Point Unit in AVR”. We can do that using a software library,
- *	so follow these steps to add it:
+ * As “There is no Floating Point Unit in AVR”. We can do that using a software library,
+ * so follow these steps to add it:
  *
- *	1- After create your Project -> Right Click “Choose Properties” -> C/C++ Build “Setting”
- *	  -> AVR C Linker “Libraries” -> Choose Add Button in “Libraries (-l)”
- *	  -> Then Add (printf_flt).
- *  2- Also AVR C Linker “General” -> Then in “Other Arguments Tab” -> Then Add (-uvfprintf).
+ * 1- After create your Project -> Right Click “Choose Properties” -> C/C++ Build “Setting”
+ *    -> AVR C Linker “Libraries” -> Choose Add Button in “Libraries (-l)”
+ *    -> Then Add (printf_flt).
+ * 2- Also AVR C Linker “General” -> Then in “Other Arguments Tab” -> Then Add (-uvfprintf).
  *
  *******************************************************************************************/
 
@@ -38,7 +38,7 @@
 #include "keypad.h"
 
 /******************************************************************************************
- * 									Preprocessor Macros 							   	  *
+ * 				 Preprocessor Macros   			   	          *
  ******************************************************************************************/
 
 #define NO_OP 0 /* NO operation */
@@ -70,7 +70,7 @@ int main(void)
 	LCD_goToRowColumn(2,0);
 
 	/********************************************************************************
-	 *                        APPLICATION	(SUPER LOOP)						    *
+	 *                        APPLICATION	(SUPER LOOP)			        *
 	 ********************************************************************************/
 
 	while(1)
@@ -86,23 +86,23 @@ int main(void)
 			switch(key)
 			{
 			case '+': flage_op = ADD;
-					  operation = '+';
-					  break;
+				  operation = '+';
+				  break;
 
 			case '-': flage_op = SUB;
-					  operation = '-';
-					  break;
+				  operation = '-';
+				  break;
 
 			case '*': flage_op = MUL;
-				      operation = '*';
-				      break;
+				  operation = '*';
+				  break;
 
 			case '/': flage_op = DIV;
-					  operation = '/';
-					  break;
+			          operation = '/';
+			          break;
 
 			case '=': flage_op = EQL;
-					  break;
+			          break;
 			}
 		}
 
@@ -134,14 +134,14 @@ int main(void)
 			{
 				switch(operation)
 				{
-				case '+':	result = (float)var1+(float)var2;
-				break;
-				case '-':	result = (float)var1-(float)var2;
-				break;
-				case '*':	result = (float)var1*(float)var2;
-				break;
-				case '/':	result =(float)var1/(float)var2;
-				break;
+				case '+': result = (float)var1+(float)var2;
+					  break;
+				case '-': result = (float)var1-(float)var2;
+					  break;
+				case '*': result = (float)var1*(float)var2;
+					  break;
+				case '/': result =(float)var1/(float)var2;
+					  break;
 				}
 
 				sprintf(buf, "=%.2f", result);
