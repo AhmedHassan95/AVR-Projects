@@ -60,7 +60,7 @@ void BUZZER_init(void);
  *
  * [in/out]	  None
  *
- * [Returns]:      None
+ * [Returns]:     None
  *******************************************************************************/
 void BUZZER_turnOn(void);
 
@@ -69,7 +69,7 @@ void BUZZER_turnOn(void);
  *
  * [Description]: 	Function to turn off the BUZZZER
  *
- * [Args]:			None
+ * [Args]:		None
  *
  * [in]		 None
  *
@@ -77,7 +77,7 @@ void BUZZER_turnOn(void);
  *
  * [in/out]	None
  *
- * [Returns]:       None
+ * [Returns]:      None
  *******************************************************************************/
 void BUZZER_turnOff(void);
 
