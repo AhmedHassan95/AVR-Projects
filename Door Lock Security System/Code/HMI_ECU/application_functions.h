@@ -53,7 +53,7 @@
 #define LONG_DISPLAY_TIME       800		/* Long Time taken for displaying message in the screen */
 #define SHORT_DISPLAY_TIME      500		/* Short Time taken for displaying message in the screen */
 
-#define ECU_READY           	0x10	       /* Byte sent to the receiver to indicate that it is ready */
+#define ECU_READY           	0x10	        /* Byte sent to the receiver to indicate that it is ready */
 
 /********************************************************************************
  *                            External Variables                                *
