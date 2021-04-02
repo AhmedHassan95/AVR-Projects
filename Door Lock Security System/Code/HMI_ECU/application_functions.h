@@ -116,17 +116,17 @@ void APP_getPassword(uint8 * Password_Ptr);
 /********************************************************************************
  * [Function Name]: APP_getUserDecision
  *
- * [Description]: 	Function to get the User decision
+ * [Description]: Function to get the User decision
  *
- * [Args]:			None
+ * [Args]:		None
  *
- * [in]			  	None
+ * [in]			  None
  *
- * [out]		    Unsigned Character
+ * [out]		   Unsigned Character
  *
- * [in/out]		 	None
+ * [in/out]			None
  *
- * [Returns]:       The User Decision
+ * [Returns]:     The User Decision
  ********************************************************************************/
 uint8 APP_getUserDecision(void);
 
