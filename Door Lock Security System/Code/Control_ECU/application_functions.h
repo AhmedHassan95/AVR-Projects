@@ -135,13 +135,13 @@ void APP_receiveCurrentPassword(uint8 * Password_Ptr);
  *
  * [Args]:	None
  *
- * [in]	None
+ * [in]	  None
  *
  * [out]	None
  *
  * [in/out]	None
  *
- * [Returns]:      None
+ * [Returns]:     None
  **********************************************************************************/
 void APP_readOldPassword(void);
 
