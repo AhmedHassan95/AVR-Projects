@@ -35,9 +35,9 @@
  *
  * [Description]: Function to Initialize the BUZZZER Driver
  *
- * [Args]:	None
+ * [Args]:	  None
  *
- * [in]	   None
+ * [in]	      None
  *
  * [out]	None
  *
