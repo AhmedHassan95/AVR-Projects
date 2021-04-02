@@ -131,17 +131,17 @@ void APP_receiveCurrentPassword(uint8 * Password_Ptr);
 /**********************************************************************************
  * [Function Name]: APP_readOldPassword
  *
- * [Description]:Function that responsible for reading the old password from the EEPROM
+ * [Description]: Function that responsible for reading the old password from the EEPROM
  *
  * [Args]:	None
  *
- * [in]	  None
+ * [in]	    None
  *
  * [out]	None
  *
  * [in/out]	None
  *
- * [Returns]:     None
+ * [Returns]:    None
  **********************************************************************************/
 void APP_readOldPassword(void);
 
