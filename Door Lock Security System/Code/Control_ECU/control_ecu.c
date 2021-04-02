@@ -7,61 +7,57 @@
  * [DATE CREATED]: Mar 11, 2021
  *
  * [DESCRIPTION]: This Project is to design a Door Lock Security System consists of two ECU's.The
- * 				  First ECU is called HMI (Human Machine Interface) ECU responsible for interfacing
- * 				  with the user through "KEYPAD + LCD" to take the user password.
- * 				  The Second ECU is called CONTROL ECU connected with "DC MOTOR" to open and close
- * 				  the door, Alarm System "BUZZER + LED" to alert if a stranger trying to open the
- * 				  door, and "External EEPROM" to store the user password.The two ECU's communicate
- * 				  with each other through UART Protocol.
+ * 	          First ECU is called HMI (Human Machine Interface) ECU responsible for interfacing
+ * 		  with the user through "KEYPAD + LCD" to take the user password.
+ * 		  The Second ECU is called CONTROL ECU connected with "DC MOTOR" to open and close
+ * 		  the door, Alarm System "BUZZER + LED" to alert if a stranger trying to open the
+ * 	          door, and "External EEPROM" to store the user password.The two ECU's communicate
+ * 	          with each other through UART Protocol.
  *
- * 				   The Second ECU is called CONTROL ECU responsible for
- * 				   	- Sending the system status to the HMI ECU.
- * 				   	- Storing the new user password in the EEPROM.
- * 				   	- Checking matching between the current and the old password.
- * 				   	- Receiving the user option.
- * 				   	- Changing the user password.
- * 				   	- Opening the door by rotating the DC motor CW, closing the DC by rotating
- * 				   	  the DC MOTOR ACW.
+ * 		 The Second ECU is called CONTROL ECU responsible for
+ * 		  - Sending the system status to the HMI ECU.
+ * 		  - Storing the new user password in the EEPROM.
+ * 		  - Checking matching between the current and the old password.
+ * 		  - Receiving the user option.
+ * 		  - Changing the user password.
+ * 		  - Opening the door by rotating the DC motor CW, closing the DC by rotating
+ * 		    the DC MOTOR ACW.
  *
  *
- *  			   Design Considerations for CONTROL ECU:
+ *  		 Design Considerations for CONTROL ECU:
  *
- *	 	 	 		 - AVR MCU ATmega 16 (F_CPU = 8 MHZ).
- *			     	 - Communicate with the HMI ECU through the UART Protocol.
- *			     	 - DC MOTOR connected to PIN 3, 4 in PORTA
- *			     	 - External EEPROM connected to SCL, SDA
- *			     	 - BUZZER connected to PIN 0 PORTA
- *			     	 - LED connected to PIN 5 in PORTA
- *					 - TIMER1 is used to count the "DOOR OPENING & CLOSING" time, and
- *					   "ALARM SYSTEM" time.
+ *	 	 - AVR MCU ATmega 16 (F_CPU = 8 MHZ).
+ *		 - Communicate with the HMI ECU through the UART Protocol.
+ *		 - DC MOTOR connected to PIN 3, 4 in PORTA
+ *	         - External EEPROM connected to SCL, SDA
+ *	         - BUZZER connected to PIN 0 PORTA
+ *	         - LED connected to PIN 5 in PORTA
+ *		 - TIMER1 is used to count the "DOOR OPENING & CLOSING" time, and "ALARM SYSTEM" time.
  *
  *                The sequence of the CONTROL ECU Program:
  *
- *                 	Phase 1:
- * 				   	 - Read the password address.
- * 				   	 - If it is equal to the default value that means this is the first time login.
- * 				   	 - If it is not equal to the default value that means this is the not first
- * 				   	   time login.
- *					 - Send the system status to the HMI ECU.
+ *                Phase 1:
+ * 		  - Read the password address.
+ * 		  - If it is equal to the default value that means this is the first time login.
+ * 		  - If it is not equal to the default value that means this is the not first time login.
+ *		  - Send the system status to the HMI ECU.
  *
- *					Phase 2:
- *					 - Receiving the user option from the CONTROL ECU.
+ *		  Phase 2:
+ *		  - Receiving the user option from the CONTROL ECU.
  *
- *					Phase 3:
- *					 - User choice is (TO CHANGE PASSWORD)
- *					 - Compare the current password with the password stored in the EEPROM
- *					   	  - If it is matched, Change the password.
- *					   	  - If it is unmatched, tell the user to try again
- *							(for two additional times), it is still unmatched count the
- *							Alarm system time (15 Seconds).
+ *		  Phase 3:
+ *		  - User choice is (TO CHANGE PASSWORD)
+ *		  - Compare the current password with the password stored in the EEPROM
+ *		  - If it is matched, Change the password.
+ *		  - If it is unmatched, tell the user to try again (for two additional times),
+ *		    it is still unmatched count the Alarm system time (15 Seconds).
  *
- *		            Phase 4:
- *					 - User choice is (TO OPEN DOOR)
- *					 - Compare the current password with the password stored in the EEPROM
- *					   	  - If it is matched, open the door.
- *					   	  - If it is unmatched, tell the user to try again
- *							(for two additional times), it is still unmatched count the
- *							Alarm system time (15 Seconds).
+ *		  Phase 4:
+ *	 	  - User choice is (TO OPEN DOOR)
+ *		  - Compare the current password with the password stored in the EEPROM
+ * 		  - If it is matched, open the door.
+ * 		  - If it is unmatched, tell the user to try again (for two additional times),
+ *                  it is still unmatched count the Alarm system time (15 Seconds).
  *
  **********************************************************************************************/
 
@@ -72,7 +68,7 @@
  **********************************************************************************************/
 
 static uint8 g_systemStatus;		/* Global variable to store the system status */
-static uint8 g_choice;				/* Global variable to store user choice */
+static uint8 g_choice;			/* Global variable to store user choice */
 static uint8 g_passwordStatus;		/* Global variable to store the current password status */
 
 /*****************************************************************************************
@@ -99,7 +95,7 @@ int main(void)
 
 	BUZZER_init();		/* BUZZER Driver Initialization */
 
-	LED_init();			/* LED Driver Initialization */
+	LED_init();		/* LED Driver Initialization */
 
 	SREG |= (1 << 7);	/* Enable Global Interrupt, I-bit in SREG register */
 
@@ -118,9 +114,9 @@ int main(void)
 	 * should be stored with the default value:
 	 *
 	 * 		- If they equal, so this is the first time to run the system, make the following steps:
-	 * 		  	1- Wait until receive byte from HMI ECU
-	 * 		    2- Send system status to the HMI ECU (FIRST TIME TO LOGIN)
-	 * 		 	3- Store the password send by HMI ECU in the EEPROM
+	 * 		  1- Wait until receive byte from HMI ECU
+	 * 		  2- Send system status to the HMI ECU (FIRST TIME TO LOGIN)
+	 * 		  3- Store the password send by HMI ECU in the EEPROM
 	 *
 	 * 		- If they not equal this is not the first time to run the system,
 	 * 		  send system status to the HMI ECU (ANY TIME TO LOGIN)
@@ -128,7 +124,7 @@ int main(void)
 	if(g_systemStatus == DEFAULT_VALUE)
 	{
 		while(UART_recieveByte() != ECU_READY){}	/* Wait until HMI ECU be ready */
-		UART_sendByte(FIRST_TIME_TO_LOGIN);			/* Send system status to the HMI ECU */
+		UART_sendByte(FIRST_TIME_TO_LOGIN);		/* Send system status to the HMI ECU */
 
 		/* Call function that responsible for receiving, and storing the new password */
 		APP_receiveNewPassword(g_newPassword);
@@ -136,17 +132,17 @@ int main(void)
 	else if(g_systemStatus != DEFAULT_VALUE)
 	{
 		while(UART_recieveByte() != ECU_READY){}	/* Wait until HMI ECU be ready */
-		UART_sendByte(ANY_TIME_TO_LOGIN);			/* Send system status to the HMI ECU */
+		UART_sendByte(ANY_TIME_TO_LOGIN);		/* Send system status to the HMI ECU */
 	}
 
 	/********************************************************************************
-	 *                        APPLICATION	(SUPER LOOP)						    *
+	 *                        APPLICATION	(SUPER LOOP)			        *
 	 ********************************************************************************/
 
 	while(1)
 	{
 		/********************************************************************************
-		 *                             USER DECISION								    *
+		 *                             USER DECISION			     	        *
 		 ********************************************************************************/
 
 		/*
@@ -154,11 +150,11 @@ int main(void)
 		 * 	 "+" : TO CHANGE PASSWORD
 		 * 	 "-" : TO DOOR OPEN
 		 */
-		UART_sendByte(ECU_READY);		/* Check if the HMI ECU is ready */
+		UART_sendByte(ECU_READY);	/* Check if the HMI ECU is ready */
 		g_choice = UART_recieveByte();	/* Receive the user decision from the HMI ECU*/
 
 		/********************************************************************************
-		 *                    FIRST CHOICE : CHANGE SYSTEM PASSWORD				 	    *
+		 *                    FIRST CHOICE : CHANGE SYSTEM PASSWORD		        *
 		 ********************************************************************************/
 
 		/*
@@ -192,7 +188,7 @@ int main(void)
 				UART_sendByte(g_passwordStatus);
 
 				/********************************************************************************
-				 *                  CASE 1 :  CORRECT PASSWORD (USER IS THE OWNER)      		*
+				 *                  CASE 1 :  CORRECT PASSWORD (USER IS THE OWNER)      	*
 				 ********************************************************************************/
 
 				/*
@@ -231,7 +227,7 @@ int main(void)
 
 
 		/********************************************************************************
-		 *                            SECOND CHOICE : OPEN DOOR				     	    *
+		 *                            SECOND CHOICE : OPEN DOOR			        *
 		 ********************************************************************************/
 
 		/*
@@ -260,7 +256,7 @@ int main(void)
 
 
 				/********************************************************************************
-				 *                 CASE 1:  CORRECT PASSWORD  (USER IS THE OWNER)  		        *
+				 *                 CASE 1:  CORRECT PASSWORD  (USER IS THE OWNER)               *
 				 ********************************************************************************/
 
 				/*
