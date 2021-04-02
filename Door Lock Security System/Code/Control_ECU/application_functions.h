@@ -45,10 +45,10 @@
 #define NO_ATTEMPT		    0		/* There are not attempt yet */
 #define MAXIMUM_ATTEMPTS            3		/* Maximum wrong attempts to enter the system */
 
-#define  INITIAL_VALUE              0  /* Initial value to start the timer count from it */
+#define  INITIAL_VALUE              0    /* Initial value to start the timer count from it */
 #define  FIRST_TICK                 1		/* First time the interrupt occurred */
 
-#define  UNLOCKED                   0  /* Unlock the system */
+#define  UNLOCKED                   0     /* Unlock the system */
 #define  OPENED                     1		/* System Opened */
 
 #define MAXIMUM_ALARM_TIME          15  /* Maximum time to turn on the Alarm */
