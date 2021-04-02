@@ -61,11 +61,11 @@ void TIMER1_clearTimerValue(void);
  *
  * [Args]:	None
  *
- * [in]			 None
+ * [in]			None
  *
- * [out]		 Unsigned Character
+ * [out]	 Unsigned Character
  *
- * [in/out]		None
+ * [in/out]	None
  *
  * [Returns]:       The TIMER1 register value
  ********************************************************************************/
