@@ -57,15 +57,15 @@ void INT0_setCallBack(void(*a_ptr)(void));
 /********************************************************************************
  * [Function Name]: INT0_DeInit
  *
- * [Description]:   Function to disable the Interrupt0 (INT0)
+ * [Description]:  Function to disable the Interrupt0 (INT0)
  *
- * [Args]:  	None
+ * [Args]:  	 None
  *
- * [in]	  	None
+ * [in]	  	 None
  *
- * [out]	  None
+ * [out]	   None
  *
- * [in/out]      None
+ * [in/out]       None
  *
  * [Returns]:       None
  ********************************************************************************/
