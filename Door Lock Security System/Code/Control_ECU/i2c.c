@@ -70,10 +70,10 @@ void TWI_init(const TWI_ConfigType * Config_Ptr)
 void TWI_start(void)
 {
     /* 
-	 * Clear the TWINT flag before sending the start bit TWINT = 1
-	 * send the start bit by TWSTA = 1
-	 * Enable TWI Module TWEN = 1 
-	 */
+     * Clear the TWINT flag before sending the start bit TWINT = 1
+     * send the start bit by TWSTA = 1
+     * Enable TWI Module TWEN = 1 
+     */
     TWCR = (1 << TWINT) | (1 << TWSTA) | (1 << TWEN);
     
     /* Wait for TWINT flag set in TWCR Register (start bit is send successfully) */
@@ -98,10 +98,10 @@ void TWI_start(void)
 void TWI_stop(void)
 {
     /* 
-	 * Clear the TWINT flag before sending the stop bit TWINT = 1
-	 * send the stop bit by TWSTO = 1
-	 * Enable TWI Module TWEN = 1 
-	 */
+     * Clear the TWINT flag before sending the stop bit TWINT = 1
+     * send the stop bit by TWSTO = 1
+     * Enable TWI Module TWEN = 1 
+     */
     TWCR = (1 << TWINT) | (1 << TWSTO) | (1 << TWEN);
 }
 
@@ -126,9 +126,9 @@ void TWI_write(uint8 data)
     TWDR = data;
 
     /* 
-	 * Clear the TWINT flag before sending the data TWINT = 1
-	 * Enable TWI Module TWEN = 1 
-	 */ 
+     * Clear the TWINT flag before sending the data TWINT = 1
+     * Enable TWI Module TWEN = 1 
+     */ 
     TWCR = (1 << TWINT) | (1 << TWEN);
 
     /* Wait for TWINT flag set in TWCR Register(data is send successfully) */
