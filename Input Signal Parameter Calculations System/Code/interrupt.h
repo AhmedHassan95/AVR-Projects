@@ -42,11 +42,11 @@ void INT0_init(void);
  *
  * [Description]:   Function to set the Call Back function address
  *
- * [Args]:	   a_ptr
+ * [Args]:	    a_ptr
  *
  * [in]		   a_Ptr: Pointer to function (Receive to the address of application function)
  *
- * [out]	  None
+ * [out]	   None
  *
  * [in/out]	   None
  *
@@ -63,11 +63,11 @@ void INT0_setCallBack(void(*a_ptr)(void));
  *
  * [in]	  	  None
  *
- * [out]	    None
+ * [out]	   None
  *
  * [in/out]        None
  *
- * [Returns]:       None
+ * [Returns]:      None
  ********************************************************************************/
 void INT0_DeInit(void);
 
