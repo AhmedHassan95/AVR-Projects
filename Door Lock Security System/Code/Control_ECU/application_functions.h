@@ -166,15 +166,15 @@ void APP_incorrectPassword(void);
 /**********************************************************************************
  * [Function Name]: APP_rotateMotorCW
  *
- * [Description]:   Function to rotate the Motor Clockwise
+ * [Description]: Function to rotate the Motor Clockwise
  *
- * [Args]:			None
+ * [Args]:	None
  *
- * [in]			  	None
+ * [in]			 None
  *
- * [out]		  	None
+ * [out]		 None
  *
- * [in/out]		 	None
+ * [in/out]		None
  *
  * [Returns]:       None
  ***********************************************************************************/
@@ -183,15 +183,15 @@ void APP_rotateMotorCW(void);
 /***********************************************************************************
  * [Function Name]: APP_stopMotor
  *
- * [Description]:   Function to stop the Motor
+ * [Description]:  Function to stop the Motor
  *
- * [Args]:			None
+ * [Args]:	None
  *
- * [in]			  	None
+ * [in]			 None
  *
- * [out]		  	None
+ * [out]	 None
  *
- * [in/out]		 	None
+ * [in/out]		None
  *
  * [Returns]:       None
  ***********************************************************************************/
@@ -200,15 +200,15 @@ void APP_stopMotor(void);
 /***********************************************************************************
  * [Function Name]: APP_rotateMotorAntiCW
  *
- * [Description]:   Function to rotate the Motor Anti Clockwise
+ * [Description]:  Function to rotate the Motor Anti Clockwise
  *
- * [Args]:			None
+ * [Args]:	None
  *
- * [in]			  	None
+ * [in]			 None
  *
- * [out]		  	None
+ * [out]		 None
  *
- * [in/out]		 	None
+ * [in/out]		None
  *
  * [Returns]:       None
  ***********************************************************************************/
