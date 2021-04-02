@@ -1,6 +1,6 @@
  /**********************************************************************************************
  *
- * [FILE NAME] : Mini_Project_1.c
+ * [FILE NAME] : digital_stop_watch.c
  *
  * [AUTHOR(S)] : Ahmed Hassan
  *
