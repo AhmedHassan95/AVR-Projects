@@ -19,9 +19,9 @@
 uint8 g_newPassword[PASSWORD_WIDTH];	 /* Global Array to store new password */
 uint8 g_currentPassword[PASSWORD_WIDTH]; /* Global Array to store current password */
 uint8 g_oldPassword[PASSWORD_WIDTH]; 	 /* Global Array to store old password */
-uint8 g_tick = INITIAL_VALUE;		     /* Global tick flag */
-uint8 g_lockSystem = UNLOCKED ;			 /* Global flag to store the system status */
-uint8 g_wrongAttempts = NO_ATTEMPT;		 /* Global variable to store the number of wrong attempts */
+uint8 g_tick = INITIAL_VALUE;		 /* Global tick flag */
+uint8 g_lockSystem = UNLOCKED ;		 /* Global flag to store the system status */
+uint8 g_wrongAttempts = NO_ATTEMPT;	 /* Global variable to store the number of wrong attempts */
 
 /**********************************************************************************
  *                      Functions Prototypes (Private)                            *
@@ -32,13 +32,13 @@ uint8 g_wrongAttempts = NO_ATTEMPT;		 /* Global variable to store the number of 
  *
  * [Description]:   Function to turn on the Alarm
  *
- * [Args]:			None
+ * [Args]:	    None
  *
- * [in]			  	None
+ * [in]		    None
  *
- * [out]		  	None
+ * [out]            None
  *
- * [in/out]		 	None
+ * [in/out]	    None
  *
  * [Returns]:       None
  **********************************************************************************/
@@ -51,18 +51,18 @@ static void APP_turnOnAlarm(void);
 /**********************************************************************************
  * [Function Name]: APP_checkPasswordMismatch
  *
- * [Description]: 	Function to check if the two passwords are identical or not
+ * [Description]: Function to check if the two passwords are identical or not
  *
- * [Args]:			Password1_Ptr, Password2_Ptr
+ * [Args]:	  Password1_Ptr, Password2_Ptr
  *
- * [in]			  	Password1_Ptr: Pointer to character
- * 					Password2_Ptr: Pointer to character
+ * [in]		  Password1_Ptr: Pointer to character
+ * 		  Password2_Ptr: Pointer to character
  *
- * [out]		  	Unsigned Character
+ * [out]	  Unsigned Character
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       Result of the comparison between two passwords
+ * [Returns]:     Result of the comparison between two passwords
  **********************************************************************************/
 uint8 APP_checkPasswordMismatch(uint8 * Password1_Ptr , uint8 * Password2_Ptr)
 {
@@ -88,18 +88,18 @@ uint8 APP_checkPasswordMismatch(uint8 * Password1_Ptr , uint8 * Password2_Ptr)
 /**********************************************************************************
  * [Function Name]: APP_receiveNewPassword
  *
- * [Description]: 	Function to receive the new password from the HMI ECU, and store it
- * 				  	in the EEPROM
+ * [Description]: Function to receive the new password from the HMI ECU, and store it
+ * 		  in the EEPROM
  *
- * [Args]:			Password_Ptr
+ * [Args]:	  Password_Ptr
  *
- * [in]			  	Password_Ptr: Pointer to character
+ * [in]	          Password_Ptr: Pointer to character
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  **********************************************************************************/
 void APP_receiveNewPassword(uint8 * Password_Ptr)
 {
@@ -129,17 +129,17 @@ void APP_receiveNewPassword(uint8 * Password_Ptr)
 /**********************************************************************************
  * [Function Name]: APP_receiveCurrentPassword
  *
- * [Description]: 	Function to receive the current password from the HMI ECU
+ * [Description]:  Function to receive the current password from the HMI ECU
  *
- * [Args]:			Password_Ptr
+ * [Args]:	   Password_Ptr
  *
- * [in]			  	Password_Ptr: Pointer to character
+ * [in]		   Password_Ptr: Pointer to character
  *
- * [out]		  	None
+ * [out]	   None
  *
- * [in/out]		 	None
+ * [in/out]	   None
  *
- * [Returns]:       None
+ * [Returns]:      None
  **********************************************************************************/
 void APP_receiveCurrentPassword(uint8 * Password_Ptr)
 {
@@ -159,17 +159,17 @@ void APP_receiveCurrentPassword(uint8 * Password_Ptr)
 /**********************************************************************************
  * [Function Name]: APP_readOldPassword
  *
- * [Description]: 	Function that responsible for reading the old password from the EEPROM
+ * [Description]:  Function that responsible for reading the old password from the EEPROM
  *
- * [Args]:			None
+ * [Args]:	   None
  *
- * [in]			  	None
+ * [in]		   None
  *
- * [out]		  	None
+ * [out]	   None
  *
- * [in/out]		 	None
+ * [in/out]	   None
  *
- * [Returns]:       None
+ * [Returns]:      None
  **********************************************************************************/
 void APP_readOldPassword(void)
 {
@@ -193,15 +193,15 @@ void APP_readOldPassword(void)
  * [Function Name]: APP_incorrectPassword
  *
  * [Description]:   Function that is responsible for running the alarm system "BUZZER + LED"
- * 					in case of the user exceeding the maximum number of wrong attempts
+ * 		    in case of the user exceeding the maximum number of wrong attempts
  *
- * [Args]:			None
+ * [Args]:	    None
  *
- * [in]			  	None
+ * [in]	            None
  *
- * [out]		  	None
+ * [out]	    None
  *
- * [in/out]		 	None
+ * [in/out]	    None
  *
  * [Returns]:       None
  **********************************************************************************/
@@ -238,13 +238,13 @@ void APP_incorrectPassword(void)
  *
  * [Description]:   Function to turn on the Alarm
  *
- * [Args]:			None
+ * [Args]:	    None
  *
- * [in]			  	None
+ * [in]		    None
  *
- * [out]		  	None
+ * [out]	    None
  *
- * [in/out]		 	None
+ * [in/out]	    None
  *
  * [Returns]:       None
  **********************************************************************************/
@@ -276,13 +276,13 @@ static void APP_turnOnAlarm(void)
  *
  * [Description]:   Function to rotate the Motor Clockwise
  *
- * [Args]:			None
+ * [Args]:	    None
  *
- * [in]			  	None
+ * [in]		    None
  *
- * [out]		  	None
+ * [out]	    None
  *
- * [in/out]		 	None
+ * [in/out]	    None
  *
  * [Returns]:       None
  *********************************************************************************/
@@ -310,17 +310,17 @@ void APP_rotateMotorCW(void)
 /*********************************************************************************
  * [Function Name]: APP_stopMotor
  *
- * [Description]:   Function to stop the Motor
+ * [Description]:  Function to stop the Motor
  *
- * [Args]:			None
+ * [Args]:	   None
  *
- * [in]			  	None
+ * [in]		   None
  *
- * [out]		  	None
+ * [out]	   None
  *
- * [in/out]		 	None
+ * [in/out]	   None
  *
- * [Returns]:       None
+ * [Returns]:      None
  *********************************************************************************/
 void APP_stopMotor(void)
 {
@@ -342,13 +342,13 @@ void APP_stopMotor(void)
  *
  * [Description]:   Function to rotate the Motor Anti Clockwise
  *
- * [Args]:			None
+ * [Args]:          None
  *
- * [in]			  	None
+ * [in]		    None
  *
- * [out]		  	None
+ * [out]	    None
  *
- * [in/out]		 	None
+ * [in/out]         None
  *
  * [Returns]:       None
  *********************************************************************************/
