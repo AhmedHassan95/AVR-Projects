@@ -104,9 +104,9 @@ uint8 APP_checkPasswordMismatch(uint8 * Password1_Ptr , uint8 * Password2_Ptr);
  *
  * [out]          None
  *
- * [in/out]	 None
+ * [in/out]	  None
  *
- * [Returns]:    None
+ * [Returns]:     None
  **********************************************************************************/
 void APP_receiveNewPassword(uint8 * Password_Ptr);
 
@@ -116,15 +116,15 @@ void APP_receiveNewPassword(uint8 * Password_Ptr);
  * [Description]: 	Function to receive the new password from the HMI ECU, and store it
  *				  	in the EEPROM
  *
- * [Args]:			Password_Ptr
+ * [Args]:		Password_Ptr
  *
- * [in]				   Password_Ptr: Pointer to character
+ * [in]				 Password_Ptr: Pointer to character
  *
- * [out]		None
+ * [out]	None
  *
  * [in/out]	None
  *
- * [Returns]:       None
+ * [Returns]:     None
  **********************************************************************************/
 void APP_receiveCurrentPassword(uint8 * Password_Ptr);
 
