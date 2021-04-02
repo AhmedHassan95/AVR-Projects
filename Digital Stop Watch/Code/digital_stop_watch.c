@@ -8,12 +8,12 @@
  *
  * [DESCRIPTION]:  This Project is to design Digital Stop Watch.
  *
- * 				   Design Considerations:
+ * 		Design Considerations:
  *
- *	 	 	 		 - AVR MCU ATmega 16 (F_CPU = 1 MHZ).
- *			     	 - SW1 -> INT0 "Internal pull up Resistor" (Falling Edge)  -> (Reset Watch).
- *			     	 - SW2 -> INT1 "Pull up Resistor"          (Raising Edge)  -> (Pause Watch).
- *			     	 - SW3 -> INT2 "Internal pull up Resistor" (Falling Edge)  -> (Resume Watch).
+ *	 	 - AVR MCU ATmega 16 (F_CPU = 1 MHZ).
+ *		 - SW1 -> INT0 "Internal pull up Resistor" (Falling Edge)  -> (Reset Watch).
+ *		 - SW2 -> INT1 "Pull up Resistor"          (Raising Edge)  -> (Pause Watch).
+ *	         - SW3 -> INT2 "Internal pull up Resistor" (Falling Edge)  -> (Resume Watch).
  *
  ***********************************************************************************************/
 
@@ -50,7 +50,7 @@ int main(void)
 	while(1)
 	{
 		/********************************************************************************
-		 *                   		    APPLICATION CODE              		            *
+		 *                   		    APPLICATION CODE              	        *
 		 ********************************************************************************/
 
 		PORTA = 0x01;	  /* Enable First 7-segment and disable others */
