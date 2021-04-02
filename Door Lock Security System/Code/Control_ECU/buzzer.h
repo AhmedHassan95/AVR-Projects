@@ -67,13 +67,13 @@ void BUZZER_turnOn(void);
 /*******************************************************************************
  * [Function Name]: BUZZER_turnOff
  *
- * [Description]: 	Function to turn off the BUZZZER
+ * [Description]: Function to turn off the BUZZZER
  *
- * [Args]:		None
+ * [Args]:	None
  *
  * [in]		 None
  *
- * [out]		None
+ * [out]	None
  *
  * [in/out]	None
  *
