@@ -86,9 +86,9 @@ extern uint8 g_wrongAttempts;		 /* Global variable to store the number of wrong 
  *
  * [in]			a_systemStatus: Unsigned Character (store the password status)
  *
- * [out]		None
+ * [out]	None
  *
- * [in/out]	None
+ * [in/out] None
  *
  * [Returns]:    None
  ********************************************************************************/
