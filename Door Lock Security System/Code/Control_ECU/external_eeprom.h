@@ -35,11 +35,11 @@
  *
  * [in]		None
  *
- * [out]  None
+ * [out]    None
  *
- * [in/out] None
+ * [in/out]   None
  *
- * [Returns]:       None
+ * [Returns]:     None
  *******************************************************************************/
 void EEPROM_init(void);
 
