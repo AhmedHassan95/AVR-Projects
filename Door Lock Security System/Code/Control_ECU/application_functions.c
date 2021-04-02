@@ -214,8 +214,7 @@ void APP_incorrectPassword(void)
 		_delay_ms(700);
 
 		/* TIMER Driver Configurations */
-			TIMER_ConfigType TIMER_Config = {INITIAL_VALUE,COUNT_ONE_SECOND,TIMER_1,
-											 COMPARE,T1_F_CPU_1024};
+			TIMER_ConfigType TIMER_Config = {INITIAL_VALUE, COUNT_ONE_SECOND, TIMER_1, COMPARE, T1_F_CPU_1024};
 		/*
 		 * Call function that call back the alarm function if the TIMER1
 		 * interrupt is fired
