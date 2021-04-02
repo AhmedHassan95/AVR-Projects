@@ -18,4 +18,6 @@ so follow these steps to add it:
 
 1- After create your Project -> Right Click “Choose Properties” -> C/C++ Build “Setting”
    -> AVR C Linker “Libraries” -> Choose Add Button in “Libraries (-l)” -> Then Add (printf_flt).
+   
+   
 2- Also AVR C Linker “General” -> Then in “Other Arguments Tab” -> Then Add (-uvfprintf).
