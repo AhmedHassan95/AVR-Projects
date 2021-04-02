@@ -98,9 +98,9 @@ uint8 APP_checkPasswordMismatch(uint8 * Password1_Ptr , uint8 * Password2_Ptr);
  *
  * [Description]: Function to receive the new password from the HMI ECU
  *
- * [Args]: 	Password_Ptr
+ * [Args]:  	Password_Ptr
  *
- * [in]	        Password_Ptr: Pointer to character
+ * [in]	         Password_Ptr: Pointer to character
  *
  * [out]          None
  *
