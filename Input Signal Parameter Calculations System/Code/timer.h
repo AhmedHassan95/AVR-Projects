@@ -45,11 +45,11 @@ void TIMER1_overFlow_init(void);
  *
  * [in]	          None
  *
- * [out]	   None
+ * [out]	  None
  *
- * [in/out]	   None
+ * [in/out]	  None
  *
- * [Returns]:      None
+ * [Returns]:     None
  ********************************************************************************/
 void TIMER1_clearTimerValue(void);
 
