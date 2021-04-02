@@ -45,9 +45,9 @@ extern volatile uint16 g_adcResult;
  *
  * [Args]:	   None
  *
- * [in]		  None
+ * [in]		   None
  *
- * [out]	  None
+ * [out]	   None
  *
  * [in/out]	   None
  *
@@ -60,17 +60,17 @@ void ADC_init(void);
  * [Function Name]: ADC_readChannel
  *
  * [Description]:   Function responsible for reading analog data from a certain ADC channel
- * 					and convert it to digital using the ADC driver
+ * and convert it to digital using the ADC driver
  *
- * [Args]:			channel_num
+ * [Args]:		channel_num
  *
- * [in]			  	channel_num: Unsigned Character to store the channel number in it
+ * [in]			  channel_num: Unsigned Character to store the channel number in it
  *
- * [out]		  	Unsigned Character
+ * [out]		 	Unsigned Character
  *
- * [in/out]		 	None
+ * [in/out]		 None
  *
- * [Returns]:       The data converted by the ADC
+ * [Returns]:     The data converted by the ADC
  *******************************************************************************/
 uint16 ADC_readChannel(uint8 channel_num);
 #endif
@@ -82,15 +82,15 @@ uint16 ADC_readChannel(uint8 channel_num);
  * [Description]:   Function responsible for reading analog data from a certain ADC channel
  * 					and convert it to digital using the ADC driver
  *
- * [Args]:			channel_num
+ * [Args]:	channel_num
  *
- * [in]			  	channel_num: Unsigned Character to store the channel number in it
+ * [in]			 channel_num: Unsigned Character to store the channel number in it
  *
- * [out]		  	None
+ * [out]		  None
  *
- * [in/out]		 	None
+ * [in/out]		None
  *
- * [Returns]:       None
+ * [Returns]:    None
  *******************************************************************************/
 void ADC_readChannel(uint8 channel_num);
 #endif
