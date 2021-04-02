@@ -74,9 +74,9 @@ extern uint8 g_wrongAttempts;		 /* Global variable to store the number of wrong 
 /********************************************************************************
  * [Function Name]: APP_setNewPassword
  *
- * [Description]: 	Function to set the new user password
+ * [Description]: Function to set the new user password
  * 			- Display a message, if this is the first time to login to the system
- * 		        	- Take new password from the user for two times
+ * 		       - Take new password from the user for two times
  * 		 	- Compare between these two passwords
  * 		  	- If two passwords are identical, send password to the Control ECU to be
  * 		  	   		stored in the EEPROM
@@ -90,7 +90,7 @@ extern uint8 g_wrongAttempts;		 /* Global variable to store the number of wrong 
  *
  * [in/out]			None
  *
- * [Returns]:     None
+ * [Returns]:    None
  ********************************************************************************/
 void APP_setNewPassword(uint8 a_systemStatus);
 
