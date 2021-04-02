@@ -63,9 +63,9 @@ void INT0_setCallBack(void(*a_ptr)(void));
  *
  * [in]			 None
  *
- * [out]		 None
+ * [out]	None
  *
- * [in/out]	 None
+ * [in/out] None
  *
  * [Returns]:       None
  ********************************************************************************/
