@@ -29,7 +29,7 @@
 /*******************************************************************************
  * [Function Name]: EEPROM_init
  *
- * [Description]: 	Function responsible for initializing EEPROM driver
+ * [Description]: Function responsible for initializing EEPROM driver
  *
  * [Args]:			None
  *
