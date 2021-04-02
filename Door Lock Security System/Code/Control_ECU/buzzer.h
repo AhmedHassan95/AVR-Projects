@@ -24,7 +24,7 @@
 /* BUZZER Pin Configurations */
 #define BUZZER_PORT_DIR 	   DDRA
 #define BUZZER_PORT_OUT	   	   PORTA
-#define BUZZER_PIN 	  	     PA0
+#define BUZZER_PIN 	  	   PA0
 
 /*******************************************************************************
  *                             Functions Prototypes                            *
