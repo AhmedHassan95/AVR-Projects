@@ -65,7 +65,7 @@ extern uint8 g_password2[PASSWORD_WIDTH];/* Global Array to store password2 */
 extern uint8 g_systemStatus;	         /* Global variable to store the system status */
 extern uint8 g_tick;	                 /* Global tick flag */
 extern uint8 g_lockSystem;		 /* Global flag to store the system status */
-extern uint8 g_wrongAttempts;          /* Global variable to store the number of wrong attempts */
+extern uint8 g_wrongAttempts;            /* Global variable to store the number of wrong attempts */
 
 /********************************************************************************
  *                         Functions Prototypes                                 *
@@ -74,13 +74,13 @@ extern uint8 g_wrongAttempts;          /* Global variable to store the number of
 /********************************************************************************
  * [Function Name]: APP_setNewPassword
  *
- * [Description]: 	Function to set the new user password
- * 			- Display a message, if this is the first time to login to the system
- * 		        - Take new password from the user for two times
- * 		 	- Compare between these two passwords
- * 		  	- If two passwords are identical, send password to the Control ECU to be
- * 		  	   stored in the EEPROM
- * 		  	- If two passwords are not identical, repeat these steps again
+ * [Description]: Function to set the new user password
+ * 		- Display a message, if this is the first time to login to the system
+ * 		       - Take new password from the user for two times
+ * 		 - Compare between these two passwords
+ * 		  - If two passwords are identical, send password to the Control ECU to be
+ * 		  	  stored in the EEPROM
+ * 		  - If two passwords are not identical, repeat these steps again
  *
  * [Args]:	a_systemStatus
  *
