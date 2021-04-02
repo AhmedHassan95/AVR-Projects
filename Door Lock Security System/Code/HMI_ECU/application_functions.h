@@ -39,10 +39,10 @@
 #define  INITIAL_VALUE          0               /* Initial value to start the timer count from it */
 #define  COUNT_ONE_SECOND       8000            /* Number be loaded in the timer to count 1S */
 
-#define  UNLOCKED               0              /* Unlock the system */
+#define  UNLOCKED               0               /* Unlock the system */
 #define  OPENED                 1		/* System Opened */
 
-#define MAXIMUM_ALARM_TIME      15             /* Maximum time to turn on the Alarm */
+#define MAXIMUM_ALARM_TIME      15              /* Maximum time to turn on the Alarm */
 #define	MAXIMUM_RUNNING_TIME    15		/* Maximum time to turn on the Motor */
 #define MAXIMUM_STOPING_TIME    3		/* Maximum time to turn off the Motor */
 
@@ -63,9 +63,9 @@
 extern uint8 g_password1[PASSWORD_WIDTH];/* Global Array to store password1 */
 extern uint8 g_password2[PASSWORD_WIDTH];/* Global Array to store password2 */
 extern uint8 g_systemStatus;		   	       /* Global variable to store the system status */
-extern uint8 g_tick;					                /* Global tick flag */
-extern uint8 g_lockSystem;				           /* Global flag to store the system status */
-extern uint8 g_wrongAttempts;			         /* Global variable to store the number of wrong attempts */
+extern uint8 g_tick;					              /* Global tick flag */
+extern uint8 g_lockSystem;				         /* Global flag to store the system status */
+extern uint8 g_wrongAttempts;			       /* Global variable to store the number of wrong attempts */
 
 /********************************************************************************
  *                         Functions Prototypes                                 *
