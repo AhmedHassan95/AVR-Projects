@@ -134,23 +134,23 @@ ISR(TIMER2_COMP_vect)
 /************************************************************************************
  * [Function Name]: TIMER_init
  *
- * [Description]: 	Function to initialize the TIMER Driver
- *					- Decide TIMER ID (TIMER0, TIMER1, TIMER2)
- *					- Decide TIMER Mode (NORMAL, COMPARE)
- * 					- Decide TIMER Clock (NO CLOCK, F_CPU CLOCK, F_CPU CLOCK/8, ..)
- * 					- Insert the initial value to start counting from it
- * 					- Insert the compare match value if use this mode (CTC Mode)
- * 					- Enable TIMER Interrupt
+ * [Description]: Function to initialize the TIMER Driver
+ *		 - Decide TIMER ID (TIMER0, TIMER1, TIMER2)
+ *		 - Decide TIMER Mode (NORMAL, COMPARE)
+ * 		 - Decide TIMER Clock (NO CLOCK, F_CPU CLOCK, F_CPU CLOCK/8, ..)
+ * 		 - Insert the initial value to start counting from it
+ * 		 - Insert the compare match value if use this mode (CTC Mode)
+ * 		 - Enable TIMER Interrupt
  *
- * [Args]:			Config_Ptr
+ * [Args]:	 Config_Ptr
  *
- * [in]			  	Config_Ptr: Pointer to TIMER Configuration Structure
+ * [in]		 Config_Ptr: Pointer to TIMER Configuration Structure
  *
- * [out]		  	None
+ * [out]	 None
  *
- * [in/out]		 	None
+ * [in/out]	 None
  *
- * [Returns]:       None
+ * [Returns]:     None
  *************************************************************************************/
 void TIMER_init(const TIMER_ConfigType * Config_Ptr)
 {
