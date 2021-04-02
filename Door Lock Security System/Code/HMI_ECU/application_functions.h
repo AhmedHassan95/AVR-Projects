@@ -39,10 +39,10 @@
 #define  INITIAL_VALUE          0               /* Initial value to start the timer count from it */
 #define  COUNT_ONE_SECOND       8000            /* Number be loaded in the timer to count 1S */
 
-#define  UNLOCKED               0            /* Unlock the system */
+#define  UNLOCKED               0               /* Unlock the system */
 #define  OPENED                 1		/* System Opened */
 
-#define MAXIMUM_ALARM_TIME      15                /* Maximum time to turn on the Alarm */
+#define MAXIMUM_ALARM_TIME      15               /* Maximum time to turn on the Alarm */
 #define	MAXIMUM_RUNNING_TIME    15		/* Maximum time to turn on the Motor */
 #define MAXIMUM_STOPING_TIME    3		/* Maximum time to turn off the Motor */
 
