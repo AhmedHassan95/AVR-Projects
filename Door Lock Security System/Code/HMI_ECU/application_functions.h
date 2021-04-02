@@ -118,11 +118,11 @@ void APP_getPassword(uint8 * Password_Ptr);
  *
  * [Description]: Function to get the User decision
  *
- * [Args]: None
+ * [Args]:      None
  *
- * [in]			 None
+ * [in]			None
  *
- * [out]		 Unsigned Character
+ * [out]		Unsigned Character
  *
  * [in/out]	None
  *
