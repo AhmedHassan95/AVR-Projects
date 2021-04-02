@@ -80,7 +80,7 @@ uint16 ADC_readChannel(uint8 channel_num);
  * [Function Name]: ADC_readChannel
  *
  * [Description]: Function responsible for reading analog data from a certain ADC channel
- * 	            and convert it to digital using the ADC driver
+ * 	          and convert it to digital using the ADC driver
  *
  * [Args]:	channel_num
  *
