@@ -18,7 +18,7 @@
 
 uint8 g_password1[PASSWORD_WIDTH]; /* Global Array to store password1 */
 uint8 g_password2[PASSWORD_WIDTH]; /* Global Array to store password2 */
-uint8 g_systemStatus;			   /* Global variable to store the system status */
+uint8 g_systemStatus;		   /* Global variable to store the system status */
 uint8 g_tick = INITIAL_VALUE;	   /* Global tick flag */
 uint8 g_lockSystem = UNLOCKED;	   /* Global flag to store the lock system status */
 uint8 g_wrongAttempts = NO_ATTEMPT;/* Global variable to store the number of wrong attempts */
@@ -30,17 +30,17 @@ uint8 g_wrongAttempts = NO_ATTEMPT;/* Global variable to store the number of wro
 /**********************************************************************************
  * [Function Name]: APP_init
  *
- * [Description]: 	Function to Initialize the Application only for the first time
- * 					- Ask the User to Enter Password for two times
- * 					- Store each password in a separate global array
+ * [Description]: Function to Initialize the Application only for the first time
+ * 		  - Ask the User to Enter Password for two times
+ * 		  - Store each password in a separate global array
  *
- * [Args]:			None
+ * [Args]:	    None
  *
- * [in]			  	None
+ * [in]		    None
  *
- * [out]		  	None
+ * [out]	    None
  *
- * [in/out]		 	None
+ * [in/out]	    None
  *
  * [Returns]:       None
  **********************************************************************************/
@@ -49,18 +49,18 @@ static void APP_init(void);
 /**********************************************************************************
  * [Function Name]: APP_checkPasswordMismatch
  *
- * [Description]: 	Function to check if the two passwords are identical or not
+ * [Description]: Function to check if the two passwords are identical or not
  *
- * [Args]:			Password1_Ptr, Password2_Ptr
+ * [Args]:	  Password1_Ptr, Password2_Ptr
  *
- * [in]			  	Password1_Ptr: Pointer to character
- * 					Password2_Ptr: Pointer to character
+ * [in]		  Password1_Ptr: Pointer to character
+ * 		  Password2_Ptr: Pointer to character
  *
- * [out]		  	Unsigned Character
+ * [out]	  Unsigned Character
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       Result of the comparison between two passwords
+ * [Returns]:     Result of the comparison between two passwords
  **********************************************************************************/
 static uint8 APP_checkPasswordMismatch(uint8 * Password1_Ptr , uint8 * Password2_Ptr);
 
@@ -72,23 +72,23 @@ static uint8 APP_checkPasswordMismatch(uint8 * Password1_Ptr , uint8 * Password2
 /**********************************************************************************
  * [Function Name]: APP_setNewPassword
  *
- * [Description]: 	Function to set the new user password
- * 					- Display a message, if this is the first time to login to the system
- * 		        	- Take new password from the user for two times
- * 		 			- Compare between these two passwords
- * 		  			- If two passwords are identical, send password to the Control ECU to be
- * 		  	   		  stored in the EEPROM
- * 		  			- If two passwords are not identical, repeat these steps again
+ * [Description]: Function to set the new user password
+ * 		  - Display a message, if this is the first time to login to the system
+ * 		  - Take new password from the user for two times
+ * 		  - Compare between these two passwords
+ * 		  - If two passwords are identical, send password to the Control ECU to be
+ * 	            stored in the EEPROM
+ * 		  - If two passwords are not identical, repeat these steps again
  *
- * [Args]:			a_systemStatus
+ * [Args]:	  a_systemStatus
  *
- * [in]			  	a_systemStatus: Unsigned Character (store the password status)
+ * [in]		  a_systemStatus: Unsigned Character (store the password status)
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  **********************************************************************************/
 void APP_setNewPassword(uint8 a_systemStatus)
 {
@@ -144,18 +144,18 @@ void APP_setNewPassword(uint8 a_systemStatus)
 /**********************************************************************************
  * [Function Name]: APP_init
  *
- * [Description]: 	Function to Initialize the Application only for the first time
- *				  	- Display Message "FIRST TIME TO LOGIN"
- * 					- Ask the User to Enter Password for two times
- * 					- Store each password in a separate global array
+ * [Description]: Function to Initialize the Application only for the first time
+ *		  - Display Message "FIRST TIME TO LOGIN"
+ * 		  - Ask the User to Enter Password for two times
+ * 		  - Store each password in a separate global array
  *
- * [Args]:			None
+ * [Args]:          None
  *
- * [in]			  	None
+ * [in]		    None
  *
- * [out]		  	None
+ * [out]	    None
  *
- * [in/out]		 	None
+ * [in/out]	    None
  *
  * [Returns]:       None
  **********************************************************************************/
@@ -190,17 +190,17 @@ static void APP_init(void)
 /**********************************************************************************
  * [Function Name]: APP_getPassword
  *
- * [Description]:	Function to get password from the User
- *				  	- Store password consists of 5 digits in a global array
- * 					- Give the User two options ('=' : TO SUBMIT, 'X' : TO CLEAR)
+ * [Description]: Function to get password from the User
+ *		  - Store password consists of 5 digits in a global array
+ * 	          - Give the User two options ('=' : TO SUBMIT, 'X' : TO CLEAR)
  *
- * [Args]:			Password_Ptr
+ * [Args]:	    Password_Ptr
  *
- * [in]			  	Password_Ptr: Pointer to character
+ * [in]		    Password_Ptr: Pointer to character
  *
- * [out]		  	None
+ * [out]	    None
  *
- * [in/out]		 	None
+ * [in/out]	    None
  *
  * [Returns]:       None
  **********************************************************************************/
@@ -272,18 +272,18 @@ void APP_getPassword(uint8 * Password_Ptr)
 /**********************************************************************************
  * [Function Name]: APP_checkPasswordMismatch
  *
- * [Description]: 	Function to check if the two passwords are identical or not
+ * [Description]: Function to check if the two passwords are identical or not
  *
- * [Args]:			Password1_Ptr, Password2_Ptr
+ * [Args]:        Password1_Ptr, Password2_Ptr
  *
- * [in]			  	Password1_Ptr: Pointer to character
- * 					Password2_Ptr: Pointer to character
+ * [in]		  Password1_Ptr: Pointer to character
+ * 		  Password2_Ptr: Pointer to character
  *
- * [out]		  	Unsigned Character
+ * [out]          Unsigned Character
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       Result of the comparison between two passwords
+ * [Returns]:     Result of the comparison between two passwords
  **********************************************************************************/
 uint8 APP_checkPasswordMismatch(uint8 * Password1_Ptr , uint8 * Password2_Ptr)
 {
@@ -309,17 +309,17 @@ uint8 APP_checkPasswordMismatch(uint8 * Password1_Ptr , uint8 * Password2_Ptr)
 /**********************************************************************************
  * [Function Name]: APP_getUserDecision
  *
- * [Description]: 	Function to get the User decision
+ * [Description]:  Function to get the User decision
  *
- * [Args]:			None
+ * [Args]:	   None
  *
- * [in]			  	None
+ * [in]		   None
  *
- * [out]		    Unsigned Character
+ * [out]           Unsigned Character
  *
- * [in/out]		 	None
+ * [in/out]	   None
  *
- * [Returns]:       The User Decision
+ * [Returns]:      The User Decision
  **********************************************************************************/
 uint8 APP_getUserDecision(void)
 {
@@ -366,17 +366,17 @@ uint8 APP_getUserDecision(void)
 /**********************************************************************************
  * [Function Name]: APP_sendPassword
  *
- * [Description]: 	Function to send password to the Control ECU
+ * [Description]: Function to send password to the Control ECU
  *
- * [Args]:			Password_Ptr
+ * [Args]:	   Password_Ptr
  *
- * [in]			  	Password_Ptr: Pointer to character
+ * [in]		   Password_Ptr: Pointer to character
  *
- * [out]		  	None
+ * [out]           None
  *
- * [in/out]		 	None
+ * [in/out]	   None
  *
- * [Returns]:       None
+ * [Returns]:      None
  **********************************************************************************/
 void APP_sendPassword(uint8 * Password1_Ptr)
 {
@@ -398,20 +398,20 @@ void APP_sendPassword(uint8 * Password1_Ptr)
  * [Description]:   Function that is responsible for doing the following steps:
  *                  - Increment the number of wrong attempts
  *                  - Display the message "INCORRECT PASSWORD"
- *					- Check the number of wrong attempts:
- *						1- If it is not equal to MAXIMUM NUMBER OF ATTEMPTS, return
- *						   from the function to get the password again from the user
- *						2- If it is equal to MAXIMUM NUMBER OF ATTEMPTS, count the
- *						   alarm time and hold the system for (15 Seconds), then return
- *						   back to the MAIN LOOP again
+ *		    - Check the number of wrong attempts:
+ *			1- If it is not equal to MAXIMUM NUMBER OF ATTEMPTS, return
+ *			   from the function to get the password again from the user
+ *			2- If it is equal to MAXIMUM NUMBER OF ATTEMPTS, count the
+ *			   alarm time and hold the system for (15 Seconds), then return
+ *			   back to the MAIN LOOP again
  *
- * [Args]:			None
+ * [Args]:	    None
  *
- * [in]			  	None
+ * [in]		    None
  *
- * [out]		  	None
+ * [out]	    None
  *
- * [in/out]		 	None
+ * [in/out]	    None
  *
  * [Returns]:       None
  ********************************************************************************/
@@ -487,17 +487,17 @@ void APP_incorrectPassword(void)
 /********************************************************************************
  * [Function Name]: APP_countAlarmTime
  *
- * [Description]:   Function to count the Alarm time
+ * [Description]: Function to count the Alarm time
  *
- * [Args]:			None
+ * [Args]:	  None
  *
- * [in]			  	None
+ * [in]		  None
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ********************************************************************************/
 void APP_countAlarmTime(void)
 {
@@ -517,17 +517,17 @@ void APP_countAlarmTime(void)
 /********************************************************************************
  * [Function Name]: APP_countMotorRunTime
  *
- * [Description]:   Function to count the Motor running time
+ * [Description]: Function to count the Motor running time
  *
- * [Args]:			None
+ * [Args]:	  None
  *
- * [in]			  	None
+ * [in]		  None
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ********************************************************************************/
 void APP_countMotorRunTime(void)
 {
@@ -547,17 +547,17 @@ void APP_countMotorRunTime(void)
 /********************************************************************************
  * [Function Name]: APP_countMotorStopTime
  *
- * [Description]:   Function to count the Motor stopping time
+ * [Description]: Function to count the Motor stopping time
  *
- * [Args]:			None
+ * [Args]:        None
  *
- * [in]			  	None
+ * [in]		  None
  *
- * [out]		  	None
+ * [out]          None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ********************************************************************************/
 void APP_countMotorStopTime(void)
 {
