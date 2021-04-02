@@ -64,12 +64,12 @@
  *                             External Variables                                 *
  **********************************************************************************/
 
-extern uint8 g_newPassword[PASSWORD_WIDTH]; /* Global Array to store new password */
+extern uint8 g_newPassword[PASSWORD_WIDTH];     /* Global Array to store new password */
 extern uint8 g_currentPassword[PASSWORD_WIDTH];	/* Global Array to store current password */
-extern uint8 g_oldPassword[PASSWORD_WIDTH];		/* Global Array to store old password */
-extern uint8 g_tick; /* Global tick flag */
-extern uint8 g_lockSystem; /* Global flag to store the system status */
-extern uint8 g_wrongAttempts; /* Global variable to store the number of wrong attempts */
+extern uint8 g_oldPassword[PASSWORD_WIDTH];		   /* Global Array to store old password */
+extern uint8 g_tick;                            /* Global tick flag */
+extern uint8 g_lockSystem;                      /* Global flag to store the system status */
+extern uint8 g_wrongAttempts;                   /* Global variable to store the number of wrong attempts */
 
 /**********************************************************************************
  *                             Functions Prototypes                               *
