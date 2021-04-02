@@ -80,11 +80,11 @@ uint16 TIMER1_getTimerValue(void);
  *
  * [in]   	   None
  *
- * [out]	    None
+ * [out]	   None
  *
- * [in/out]	    None
+ * [in/out]	   None
  *
- * [Returns]:       None
+ * [Returns]:      None
  ********************************************************************************/
 void TIMER1_DeInit(void);
 
