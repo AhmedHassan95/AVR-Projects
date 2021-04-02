@@ -52,13 +52,13 @@ void BUZZER_init(void);
  *
  * [Description]: Function to turn on the BUZZZER
  *
- * [Args]:	None
+ * [Args]:	  None
  *
- * [in]		None
+ * [in]		  None
  *
- * [out]	None
+ * [out]	  None
  *
- * [in/out]	 None
+ * [in/out]	   None
  *
  * [Returns]:       None
  *******************************************************************************/
@@ -71,11 +71,11 @@ void BUZZER_turnOn(void);
  *
  * [Args]:			None
  *
- * [in]			  	None
+ * [in]			 None
  *
- * [out]		  	None
+ * [out]			None
  *
- * [in/out]		 	None
+ * [in/out]		None
  *
  * [Returns]:       None
  *******************************************************************************/
