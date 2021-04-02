@@ -33,7 +33,7 @@
 #define MATCHED                 0		/* Two passwords are matched */
 #define MISMATCHED       	1		/* Two passwords are not matched */
 
-#define NO_ATTEMPT	       0		/* There are not try yet */
+#define NO_ATTEMPT	        0		/* There are not try yet */
 #define MAXIMUM_ATTEMPTS   	3		/* Maximum wrong attempts to enter the system */
 
 #define  INITIAL_VALUE          0       /* Initial value to start the timer count from it */
@@ -47,7 +47,7 @@
 #define MAXIMUM_STOPING_TIME    3		/* Maximum time to turn off the Motor */
 
 #define CHANGE_PASSWORD     	43 		/* ACII Code for '+' */
-#define DOOR_OPEN          		45		/* ACII Code for '-' */
+#define DOOR_OPEN          45		/* ACII Code for '-' */
 
 #define PRESS_TIME         		350		/* Time taken for each press */
 #define LONG_DISPLAY_TIME       800		/* Long Time taken for displaying message in the screen */
