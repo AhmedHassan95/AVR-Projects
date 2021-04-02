@@ -39,7 +39,7 @@ extern unsigned char hours;	/* Global variable to store the number of hours */
  *
  * [in/out]		 	None
  *
- * [Returns]:                 None
+ * [Returns]:                    None
  **********************************************************************************/
 void INT0_Init(void);
 
@@ -56,7 +56,7 @@ void INT0_Init(void);
  *
  * [in/out]		 	None
  *
- * [Returns]:         None
+ * [Returns]:               None
  **********************************************************************************/
 void INT1_Init(void);
 
@@ -73,7 +73,7 @@ void INT1_Init(void);
  *
  * [in/out]		 	None
  *
- * [Returns]:          None
+ * [Returns]:                 None
  **********************************************************************************/
 void INT2_Init(void);
 
