@@ -59,7 +59,7 @@ void EEPROM_init(void)
  ******************************************************************************************/
 uint8 EEPROM_writeByte(uint16 u16addr, uint8 u8data)
 {
-	/* Send the Start Bit */
+    /* Send the Start Bit */
     TWI_start();
     if (TWI_getStatus() != TW_START)
         return ERROR;
@@ -106,7 +106,7 @@ uint8 EEPROM_writeByte(uint16 u16addr, uint8 u8data)
  ******************************************************************************************/
 uint8 EEPROM_readByte(uint16 u16addr, uint8 * u8data)
 {
-	/* Send the Start Bit */
+    /* Send the Start Bit */
     TWI_start();
     if (TWI_getStatus() != TW_START)
         return ERROR;
