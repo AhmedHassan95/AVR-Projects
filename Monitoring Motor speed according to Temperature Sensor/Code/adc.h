@@ -59,7 +59,7 @@ void ADC_init(void);
 /*******************************************************************************
  * [Function Name]: ADC_readChannel
  *
- * [Description]:   Function responsible for reading analog data from a certain ADC channel
+ * [Description]:  Function responsible for reading analog data from a certain ADC channel
  *                  and convert it to digital using the ADC driver
  *
  * [Args]:	   channel_num
@@ -88,7 +88,7 @@ uint16 ADC_readChannel(uint8 channel_num);
  *
  * [out]         None
  *
- * [in/out]   	None
+ * [in/out]   	  None
  *
  * [Returns]:    None
  *******************************************************************************/
