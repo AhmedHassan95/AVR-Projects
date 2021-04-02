@@ -51,14 +51,14 @@
 #define  UNLOCKED                   0          /* Unlock the system */
 #define  OPENED                     1		/* System Opened */
 
-#define MAXIMUM_ALARM_TIME          15    /* Maximum time to turn on the Alarm */
+#define MAXIMUM_ALARM_TIME          15       /* Maximum time to turn on the Alarm */
 #define	MAXIMUM_RUNNING_TIME        15		/* Maximum time to turn on the Motor */
 #define MAXIMUM_STOPING_TIME        3		 /* Maximum time to turn off the Motor */
 
 #define  COUNT_ONE_SECOND           8000    /* Number be loaded in the timer to count 1S */
 
 #define CHANGE_PASSWORD     	    43 		/* ACII Code for '+' */
-#define DOOR_OPEN          	    45		  /* ACII Code for '-' */
+#define DOOR_OPEN          	    45		 /* ACII Code for '-' */
 
 /**********************************************************************************
  *                             External Variables                                 *
@@ -82,10 +82,10 @@ extern uint8 g_wrongAttempts;                   /* Global variable to store the 
  *
  * [Args]:			Password1_Ptr, Password2_Ptr
  *
- * [in]			  	Password1_Ptr: Pointer to character
+ * [in]		Password1_Ptr: Pointer to character
  * 					Password2_Ptr: Pointer to character
  *
- * [out]		  	Unsigned Character
+ * [out]		 	Unsigned Character
  *
  * [in/out]		 	None
  *
