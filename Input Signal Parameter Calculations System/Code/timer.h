@@ -24,13 +24,13 @@
  *
  * [Description]:   Function to enable and configure Timer1
  *
- * [Args]:			None
+ * [Args]:	None
  *
- * [in]			  	None
+ * [in]			 None
  *
- * [out]		  	None
+ * [out]		 None
  *
- * [in/out]		 	None
+ * [in/out]		None
  *
  * [Returns]:       None
  ********************************************************************************/
