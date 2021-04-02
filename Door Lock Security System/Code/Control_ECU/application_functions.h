@@ -42,7 +42,7 @@
 #define MATCHED                    0	/* Two password are matched */
 #define MISMATCHED                 1		/* Two password are not matched */
 
-#define NO_ATTEMPT		  0		/* There are not attempt yet */
+#define NO_ATTEMPT		   0		/* There are not attempt yet */
 #define MAXIMUM_ATTEMPTS    3		/* Maximum wrong attempts to enter the system */
 
 #define  INITIAL_VALUE          0       /* Initial value to start the timer count from it */
@@ -58,7 +58,7 @@
 #define  COUNT_ONE_SECOND       8000    /* Number be loaded in the timer to count 1S */
 
 #define CHANGE_PASSWORD     	   43 		/* ACII Code for '+' */
-#define DOOR_OPEN          	     45		/* ACII Code for '-' */
+#define DOOR_OPEN          	   45		/* ACII Code for '-' */
 
 /**********************************************************************************
  *                             External Variables                                 *
