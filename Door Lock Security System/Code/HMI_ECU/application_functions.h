@@ -36,20 +36,20 @@
 #define NO_ATTEMPT	        0		/* There are not try yet */
 #define MAXIMUM_ATTEMPTS   	3		/* Maximum wrong attempts to enter the system */
 
-#define  INITIAL_VALUE          0       /* Initial value to start the timer count from it */
-#define  COUNT_ONE_SECOND       8000    /* Number be loaded in the timer to count 1S */
+#define  INITIAL_VALUE          0          /* Initial value to start the timer count from it */
+#define  COUNT_ONE_SECOND       8000       /* Number be loaded in the timer to count 1S */
 
 #define  UNLOCKED               0       /* Unlock the system */
 #define  OPENED                 1		/* System Opened */
 
-#define MAXIMUM_ALARM_TIME      15      /* Maximum time to turn on the Alarm */
+#define MAXIMUM_ALARM_TIME      15         /* Maximum time to turn on the Alarm */
 #define	MAXIMUM_RUNNING_TIME    15		/* Maximum time to turn on the Motor */
 #define MAXIMUM_STOPING_TIME    3		/* Maximum time to turn off the Motor */
 
 #define CHANGE_PASSWORD     	43 		/* ACII Code for '+' */
 #define DOOR_OPEN               45		/* ACII Code for '-' */
 
-#define PRESS_TIME             350		/* Time taken for each press */
+#define PRESS_TIME              350		/* Time taken for each press */
 #define LONG_DISPLAY_TIME       800		/* Long Time taken for displaying message in the screen */
 #define SHORT_DISPLAY_TIME      500		/* Short Time taken for displaying message in the screen */
 
