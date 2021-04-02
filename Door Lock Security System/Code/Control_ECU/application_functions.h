@@ -118,11 +118,11 @@ void APP_receiveNewPassword(uint8 * Password_Ptr);
  *
  * [Args]:	 Password_Ptr
  *
- * [in]		 Password_Ptr: Pointer to character
+ * [in]		Password_Ptr: Pointer to character
  *
- * [out]	 None
+ * [out]	None
  *
- * [in/out] 	 None
+ * [in/out] 	None
  *
  * [Returns]:    None
  **********************************************************************************/
