@@ -56,8 +56,8 @@ void TIMER1_clearTimerValue(void);
 /********************************************************************************
  * [Function Name]: TIMER1_getTimerValue
  *
- * [Description]:   Function to get the Timer1 Value, to store it in the global variables,
- * 	    then use these variables to calculate the Duty Cycle of the signal
+ * [Description]:  Function to get the Timer1 Value, to store it in the global variables,
+ * 	       then use these variables to calculate the Duty Cycle of the signal
  *
  * [Args]:	  None
  *
@@ -76,13 +76,13 @@ uint16 TIMER1_getTimerValue(void);
  *
  * [Description]:   Function to disable the Timer1
  *
- * [Args]:			None
+ * [Args]:		None
  *
- * [in]			  	None
+ * [in]			 	None
  *
- * [out]		  	None
+ * [out]		  None
  *
- * [in/out]		 	None
+ * [in/out]			None
  *
  * [Returns]:       None
  ********************************************************************************/
