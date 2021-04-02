@@ -15,24 +15,24 @@
 /********************************************************************************
  * [Function Name]: PWM_Timer0_Init
  *
- * [Description]: 	Function to Control the DC Motor direction using L293D H-bridge
- *   				- Control The DC Motor Speed using PWM from MC.
- *   				- Connect the PWM PIN of Timer0 OC0(PB3) to the enable of the Motor
- *   				- Duty cycle 100% --> Maximum Speed
- *   				- Duty cycle 75% --> Three Quarters Speed
- *   				- Duty cycle 50%  --> Half Maximum Speed
- *   				- Duty cycle 25% --> Quarter Speed
- *   				- Duty cycle 0%   --> Motor Stop
+ * [Description]: Function to Control the DC Motor direction using L293D H-bridge
+ *   			- Control The DC Motor Speed using PWM from MC.
+ *   			- Connect the PWM PIN of Timer0 OC0(PB3) to the enable of the Motor
+ *   			- Duty cycle 100% --> Maximum Speed
+ *   			- Duty cycle 75% --> Three Quarters Speed
+ *   			- Duty cycle 50%  --> Half Maximum Speed
+ *   			- Duty cycle 25% --> Quarter Speed
+ *   			- Duty cycle 0%   --> Motor Stop
  *
- * [Args]:			set_duty_cycle
+ * [Args]:		set_duty_cycle
  *
- * [in]				set_duty_cycle: Unsigned Character to store the duty cycle in it
+ * [in]			set_duty_cycle: Unsigned Character to store the duty cycle in it
  *
- * [out]		  	None
+ * [out]		None
  *
- * [in/out]		 	None
+ * [in/out]		None
  *
- * [Returns]:       None
+ * [Returns]:       	None
  ********************************************************************************/
 void PWM_Timer0_Init(uint8 set_duty_cycle)
 {
