@@ -133,15 +133,15 @@ uint8 APP_getUserDecision(void);
 /********************************************************************************
  * [Function Name]: APP_sendPassword
  *
- * [Description]: 	Function to send password to the Control ECU
+ * [Description]: Function to send password to the Control ECU
  *
- * [Args]:			Password_Ptr
+ * [Args]:	Password_Ptr
  *
- * [in]			  	Password_Ptr: Pointer to character
+ * [in]			Password_Ptr: Pointer to character
  *
- * [out]		  	None
+ * [out]		 None
  *
- * [in/out]		 	None
+ * [in/out]		None
  *
  * [Returns]:       None
  ********************************************************************************/
@@ -150,10 +150,10 @@ void APP_sendPassword(uint8 * Password_Ptr);
 /********************************************************************************
  * [Function Name]: APP_icorrectPassword
  *
- * [Description]:   Function that is responsible for doing the following steps:
- *                  - Increment the number of wrong attempts
- *                  - Display the message "INCORRECT PASSWORD"
- *					- Check the number of wrong attempts:
+ * [Description]: Function that is responsible for doing the following steps:
+ *                 - Increment the number of wrong attempts
+ *                 - Display the message "INCORRECT PASSWORD"
+ *					   - Check the number of wrong attempts:
  *						1- If it is not equal to MAXIMUM NUMBER OF ATTEMPTS, return
  *						   from the function to get the password again from the user
  *						2- If it is equal to MAXIMUM NUMBER OF ATTEMPTS, count the
