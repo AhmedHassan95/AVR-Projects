@@ -19,15 +19,15 @@
 /**********************************************************************************
  * [Function Name]: Timer1_CTC_Init
  *
- * [Description]: 	Function to count the required time (1 Second)
+ * [Description]: Function to count the required time (1 Second)
  *
- * [Args]:			tick
+ * [Args]:	tick
  *
- * [in]			  	tick: Unsigned Character to store the compare value in it
+ * [in]	tick: Unsigned Character to store the compare value in it
  *
- * [out]		  	None
+ * [out]	None
  *
- * [in/out]		 	None
+ * [in/out]	None
  *
  * [Returns]:       None
  **********************************************************************************/
