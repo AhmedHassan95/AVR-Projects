@@ -88,9 +88,9 @@ extern uint8 g_wrongAttempts;            /* Global variable to store the number 
  *
  * [out]       None
  *
- * [in/out]	None
+ * [in/out]	 None
  *
- * [Returns]:      None
+ * [Returns]:   None
  ********************************************************************************/
 void APP_setNewPassword(uint8 a_systemStatus);
 
