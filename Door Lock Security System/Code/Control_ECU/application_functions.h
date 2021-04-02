@@ -149,15 +149,15 @@ void APP_readOldPassword(void);
  * [Function Name]: APP_incorrectPassword
  *
  * [Description]: Function that is responsible for running the alarm system "BUZZER + LED"
- * 					in case of the user exceeding the maximum number of wrong attempts
+ * 			in case of the user exceeding the maximum number of wrong attempts
  *
- * [Args]:		None
+ * [Args]:	None
  *
  * [in]		None
  *
  * [out]	None
  *
- * [in/out]		None
+ * [in/out]	None
  *
  * [Returns]:    None
  **********************************************************************************/
