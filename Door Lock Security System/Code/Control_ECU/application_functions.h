@@ -83,13 +83,13 @@ extern uint8 g_wrongAttempts;                   /* Global variable to store the 
  * [Args]:	Password1_Ptr, Password2_Ptr
  *
  * [in]	Password1_Ptr: Pointer to character
- * 					Password2_Ptr: Pointer to character
+ * 		Password2_Ptr: Pointer to character
  *
- * [out]		Unsigned Character
+ * [out]	Unsigned Character
  *
- * [in/out]		None
+ * [in/out]	None
  *
- * [Returns]:     Result of the comparison between two passwords
+ * [Returns]:   Result of the comparison between two passwords
  **********************************************************************************/
 uint8 APP_checkPasswordMismatch(uint8 * Password1_Ptr , uint8 * Password2_Ptr);
 
