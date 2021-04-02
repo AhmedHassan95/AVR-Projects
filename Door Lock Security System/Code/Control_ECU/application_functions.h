@@ -122,9 +122,9 @@ void APP_receiveNewPassword(uint8 * Password_Ptr);
  *
  * [out]	 None
  *
- * [in/out] 	None
+ * [in/out] 	 None
  *
- * [Returns]:     None
+ * [Returns]:    None
  **********************************************************************************/
 void APP_receiveCurrentPassword(uint8 * Password_Ptr);
 
