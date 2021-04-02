@@ -45,13 +45,13 @@ extern volatile uint16 g_adcResult;
  *
  * [Args]:	   None
  *
- * [in]			None
+ * [in]		None
  *
- * [out]		None
+ * [out]	None
  *
  * [in/out]	   None
  *
- * [Returns]:       None
+ * [Returns]:      None
  *******************************************************************************/
 void ADC_init(void);
 
