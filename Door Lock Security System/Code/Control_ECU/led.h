@@ -56,11 +56,11 @@ void LED_init(void);
  *
  * [in]		None
  *
- * [out] None
+ * [out]   None
  *
  * [in/out]	None
  *
- * [Returns]:     None
+ * [Returns]:   None
  *******************************************************************************/
 void LED_turnOn(void);
 
