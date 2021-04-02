@@ -64,13 +64,13 @@ void ADC_init(void);
  *
  * [Args]:	 channel_num
  *
- * [in]	channel_num: Unsigned Character to store the channel number in it
+ * [in]	       channel_num: Unsigned Character to store the channel number in it
  * 
  * [out]	Unsigned Character
  *
- * [in/out]	  None
+ * [in/out]	   None
  *
- * [Returns]:     The data converted by the ADC
+ * [Returns]:      The data converted by the ADC
  *******************************************************************************/
 uint16 ADC_readChannel(uint8 channel_num);
 #endif
