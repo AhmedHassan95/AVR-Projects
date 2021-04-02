@@ -88,7 +88,7 @@ extern uint8 g_wrongAttempts;		 /* Global variable to store the number of wrong 
  *
  * [out]	None
  *
- * [in/out]   None
+ * [in/out]     None
  *
  * [Returns]:    None
  ********************************************************************************/
