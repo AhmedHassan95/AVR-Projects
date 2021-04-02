@@ -137,11 +137,11 @@ void APP_receiveCurrentPassword(uint8 * Password_Ptr);
  *
  * [in]	          None
  *
- * [out]	 None
+ * [out]	  None
  *
- * [in/out]	 None
+ * [in/out]	  None
  *
- * [Returns]:    None
+ * [Returns]:     None
  **********************************************************************************/
 void APP_readOldPassword(void);
 
@@ -151,15 +151,15 @@ void APP_readOldPassword(void);
  * [Description]: Function that is responsible for running the alarm system "BUZZER + LED"
  * 					in case of the user exceeding the maximum number of wrong attempts
  *
- * [Args]:			None
+ * [Args]:		None
  *
- * [in]			 	None
+ * [in]		None
  *
- * [out]		None
+ * [out]	None
  *
- * [in/out]		 None
+ * [in/out]		None
  *
- * [Returns]:      None
+ * [Returns]:    None
  **********************************************************************************/
 void APP_incorrectPassword(void);
 
