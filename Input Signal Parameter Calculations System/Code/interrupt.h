@@ -40,7 +40,7 @@ void INT0_init(void);
 /********************************************************************************
  * [Function Name]: INT0_setCallBack
  *
- * [Description]:   Function to set the Call Back function address
+ * [Description]:  Function to set the Call Back function address
  *
  * [Args]:	    a_ptr
  *
@@ -50,7 +50,7 @@ void INT0_init(void);
  *
  * [in/out]	   None
  *
- * [Returns]:     None
+ * [Returns]:      None
  ********************************************************************************/
 void INT0_setCallBack(void(*a_ptr)(void));
 
@@ -59,9 +59,9 @@ void INT0_setCallBack(void(*a_ptr)(void));
  *
  * [Description]:  Function to disable the Interrupt0 (INT0)
  *
- * [Args]:  	  None
+ * [Args]:  	   None
  *
- * [in]	  	  None
+ * [in]	  	   None
  *
  * [out]	   None
  *
