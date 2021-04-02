@@ -172,11 +172,11 @@ void APP_incorrectPassword(void);
  *
  * [in]		 None
  *
- * [out]		None
+ * [out]	None
  *
- * [in/out]	None
+ * [in/out]	 None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ***********************************************************************************/
 void APP_rotateMotorCW(void);
 
