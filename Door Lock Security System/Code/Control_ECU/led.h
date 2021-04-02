@@ -41,26 +41,26 @@
  *
  * [out]	  None
  *
- * [in/out]	   None
+ * [in/out]	  None
  *
- * [Returns]:      None
+ * [Returns]:     None
  *******************************************************************************/
 void LED_init(void);
 
 /*******************************************************************************
  * [Function Name]: LED_turnOn
  *
- * [Description]: 	Function to turn on the LED
+ * [Description]: Function to turn on the LED
  *
- * [Args]:			None
+ * [Args]:		None
  *
- * [in]			  	None
+ * [in]			  None
  *
- * [out]		  	None
+ * [out]		  None
  *
- * [in/out]		 	None
+ * [in/out]		 None
  *
- * [Returns]:       None
+ * [Returns]:      None
  *******************************************************************************/
 void LED_turnOn(void);
 
