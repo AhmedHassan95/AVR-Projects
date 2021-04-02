@@ -78,9 +78,9 @@ uint16 TIMER1_getTimerValue(void);
  *
  * [Args]:	  None
  *
- * [in]   	  None
+ * [in]   	   None
  *
- * [out]	    None
+ * [out]	     None
  *
  * [in/out]	    None
  *
