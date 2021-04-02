@@ -42,7 +42,7 @@
 #define  UNLOCKED               0               /* Unlock the system */
 #define  OPENED                 1		/* System Opened */
 
-#define MAXIMUM_ALARM_TIME      15               /* Maximum time to turn on the Alarm */
+#define MAXIMUM_ALARM_TIME      15              /* Maximum time to turn on the Alarm */
 #define	MAXIMUM_RUNNING_TIME    15		/* Maximum time to turn on the Motor */
 #define MAXIMUM_STOPING_TIME    3		/* Maximum time to turn off the Motor */
 
@@ -53,7 +53,7 @@
 #define LONG_DISPLAY_TIME       800		/* Long Time taken for displaying message in the screen */
 #define SHORT_DISPLAY_TIME      500		/* Short Time taken for displaying message in the screen */
 
-#define ECU_READY           	0x10	      /* Byte sent to the receiver to indicate that it is ready */
+#define ECU_READY           	0x10	       /* Byte sent to the receiver to indicate that it is ready */
 
 /********************************************************************************
  *                            External Variables                                *
