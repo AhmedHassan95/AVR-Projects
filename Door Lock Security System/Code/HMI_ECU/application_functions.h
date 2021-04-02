@@ -157,8 +157,8 @@ void APP_sendPassword(uint8 * Password_Ptr);
  *		    1- If it is not equal to MAXIMUM NUMBER OF ATTEMPTS, return
  *		       from the function to get the password again from the user
  *		    2- If it is equal to MAXIMUM NUMBER OF ATTEMPTS, count the
- *			  alarm time and hold the system for (15 Seconds), then return
- *			  back to the MAIN LOOP again
+ *			alarm time and hold the system for (15 Seconds), then return
+ *			back to the MAIN LOOP again
  *
  * [Args]:	  None
  *
