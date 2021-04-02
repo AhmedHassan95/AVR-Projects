@@ -13,29 +13,29 @@
 #include "uart.h"
 
 /******************************************************************************************
- *                  		        Functions Definitions                                 *
+ *                  		        Functions Definitions                             *
  ******************************************************************************************/
 
 /******************************************************************************************
  * [Function Name]: UART_init
  *
- * [Description]: 	Function to Initialize the UART Driver
- *					- Decide UART Mode (Normal, Double Speed)
- * 					- Decide Baud Rate of the UART Module (100 BPS, 200 BPS, 300 BPS, ..)
- * 					- Decide Number of Data Bits to be transmitted or Received (5,6,7,8 or 9)
- * 					- Decide UART Parity Type (Disable, Even, Odd)
- * 					- Decide Number of Stop Bits (One, Two)
- * 					- Enable Transmitter & Receiver of the UART Module
+ * [Description]: Function to Initialize the UART Driver
+ *		 - Decide UART Mode (Normal, Double Speed)
+ * 		 - Decide Baud Rate of the UART Module (100 BPS, 200 BPS, 300 BPS, ..)
+ * 		 - Decide Number of Data Bits to be transmitted or Received (5,6,7,8 or 9)
+ * 		 - Decide UART Parity Type (Disable, Even, Odd)
+ * 		 - Decide Number of Stop Bits (One, Two)
+ * 		 - Enable Transmitter & Receiver of the UART Module
  *
- * [Args]:			Config_Ptr
+ * [Args]:	 Config_Ptr
  *
- * [in]			  	Config_Ptr: Pointer to UART Configuration Structure
+ * [in]		 Config_Ptr: Pointer to UART Configuration Structure
  *
- * [out]		  	None
+ * [out]	 None
  *
- * [in/out]		 	None
+ * [in/out]	 None
  *
- * [Returns]:       None
+ * [Returns]:    None
  ******************************************************************************************/
 void UART_init(const UART_ConfigType * Config_Ptr)
 {
@@ -80,30 +80,30 @@ void UART_init(const UART_ConfigType * Config_Ptr)
 	 */
 	switch(Config_Ptr -> uart_Mode)
 	{
-	case NORMAL_SPEED:	UBRRH = ( (((F_CPU / (Config_Ptr -> uart_BaudRate * 16UL))) - 1) >> 8 );
-						UBRRL = ( ((F_CPU / (Config_Ptr -> uart_BaudRate * 16UL))) - 1 );
-						break;
+	case NORMAL_SPEED: UBRRH = ( (((F_CPU / (Config_Ptr -> uart_BaudRate * 16UL))) - 1) >> 8 );
+			   UBRRL = ( ((F_CPU / (Config_Ptr -> uart_BaudRate * 16UL))) - 1 );
+			   break;
 
-	case DOUBLE_SPEED:	UBRRH = ( (((F_CPU / (Config_Ptr -> uart_BaudRate * 8UL))) - 1) >> 8 );
-						UBRRL = ( ((F_CPU / (Config_Ptr -> uart_BaudRate * 8UL))) - 1 );
-						break;
+	case DOUBLE_SPEED: UBRRH = ( (((F_CPU / (Config_Ptr -> uart_BaudRate * 8UL))) - 1) >> 8 );
+			   UBRRL = ( ((F_CPU / (Config_Ptr -> uart_BaudRate * 8UL))) - 1 );
+			   break;
 	}
 }
 
 /***************************************************************************************
  * [Function Name]: UART_sendByte
  *
- * [Description]: 	Function responsible for sending 1 Byte through UART driver
+ * [Description]: Function responsible for sending 1 Byte through UART driver
  *
- * [Args]:			data
+ * [Args]:	  data
  *
- * [in]			  	data: Unsigned Character (Byte need to be sent through the UART)
+ * [in]		  data: Unsigned Character (Byte need to be sent through the UART)
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ****************************************************************************************/
 void UART_sendByte(const uint8 data)
 {
@@ -123,17 +123,17 @@ void UART_sendByte(const uint8 data)
 /****************************************************************************************
  * [Function Name]: UART_recieveByte
  *
- * [Description]: 	Function responsible for receiving 1 Byte through UART driver
+ * [Description]: Function responsible for receiving 1 Byte through UART driver
  *
- * [Args]:			None
+ * [Args]:	  None
  *
- * [in]			  	None
+ * [in]		  None
  *
- * [out]		  	Unsigned Character
+ * [out]	  Unsigned Character
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       The Byte that received through the UART
+ * [Returns]:     The Byte that received through the UART
  ****************************************************************************************/
 uint8 UART_recieveByte(void)
 {
@@ -153,18 +153,18 @@ uint8 UART_recieveByte(void)
 /****************************************************************************************
  * [Function Name]: UART_sendString
  *
- * [Description]: 	Function responsible for sending a string (more than 1 character)
- * 					through UART driver
+ * [Description]: Function responsible for sending a string (more than 1 character)
+ * 		  through UART driver
  *
- * [Args]:			Str
+ * [Args]:        Str
  *
- * [in]				Str: Pointer to Unsigned Character (String need to be sent through the UART)
+ * [in]		  Str: Pointer to Unsigned Character (String need to be sent through the UART)
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ****************************************************************************************/
 void UART_sendString(const uint8 * Str)
 {
@@ -180,18 +180,18 @@ void UART_sendString(const uint8 * Str)
 /****************************************************************************************
  * [Function Name]: UART_receiveString
  *
- * [Description]: 	Function responsible for receiving a string (more than 1 character)
- * 				  	until receiving a special character ('#') through UART driver
+ * [Description]: Function responsible for receiving a string (more than 1 character)
+ * 		  until receiving a special character ('#') through UART driver
  *
- * [Args]:			Str
+ * [Args]:	  Str
  *
- * [in]				Str: Pointer to Unsigned Character (String need to be received through the UART)
+ * [in]		  Str: Pointer to Unsigned Character (String need to be received through the UART)
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ****************************************************************************************/
 void UART_receiveString(uint8 * Str)
 {
@@ -209,17 +209,17 @@ void UART_receiveString(uint8 * Str)
 /****************************************************************************************
  * [Function Name]: UART_setParityType
  *
- * [Description]: 	Function to set the required Parity Type
+ * [Description]: Function to set the required Parity Type
  *
- * [Args]:			a_parityType
+ * [Args]:	  a_parityType
  *
- * [in]				a_parityType: Enumerator to UART Parity Type
+ * [in]		  a_parityType: Enumerator to UART Parity Type
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ****************************************************************************************/
 void UART_setParityType(const UART_ParityType a_parityType)
 {
@@ -230,17 +230,17 @@ void UART_setParityType(const UART_ParityType a_parityType)
 /****************************************************************************************
  * [Function Name]: UART_setStopBit
  *
- * [Description]: 	Function to set the required Stop bit(s)
+ * [Description]: Function to set the required Stop bit(s)
  *
- * [Args]:			a_stopBit
+ * [Args]:	  a_stopBit
  *
- * [in]				a_stopBit: Enumerator to UART Stop Bit
+ * [in]		  a_stopBit: Enumerator to UART Stop Bit
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ****************************************************************************************/
 void UART_setStopBit(const UART_StopBit a_stopBit)
 {
@@ -251,17 +251,17 @@ void UART_setStopBit(const UART_StopBit a_stopBit)
 /****************************************************************************************
  * [Function Name]: UART_DeInit
  *
- * [Description]: 	Function to disable the UART Driver
+ * [Description]: Function to disable the UART Driver
  *
- * [Args]:			None
+ * [Args]:	  None
  *
- * [in]				None
+ * [in]		  None
  *
- * [out]		  	None
+ * [out]	  None
  *
- * [in/out]		 	None
+ * [in/out]	  None
  *
- * [Returns]:       None
+ * [Returns]:     None
  ****************************************************************************************/
 void UART_DeInit(void)
 {
