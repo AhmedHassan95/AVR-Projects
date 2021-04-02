@@ -141,7 +141,7 @@ uint8 APP_getUserDecision(void);
  *
  * [out]	  None
  *
- * [in/out]	None
+ * [in/out]	  None
  *
  * [Returns]:       None
  ********************************************************************************/
