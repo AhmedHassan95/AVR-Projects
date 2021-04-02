@@ -55,10 +55,10 @@
 #define	MAXIMUM_RUNNING_TIME        15		/* Maximum time to turn on the Motor */
 #define MAXIMUM_STOPING_TIME        3		/* Maximum time to turn off the Motor */
 
-#define  COUNT_ONE_SECOND           8000      /* Number be loaded in the timer to count 1S */
+#define  COUNT_ONE_SECOND           8000        /* Number be loaded in the timer to count 1S */
 
 #define CHANGE_PASSWORD     	    43 		/* ACII Code for '+' */
-#define DOOR_OPEN          	    45		 /* ACII Code for '-' */
+#define DOOR_OPEN          	    45		/* ACII Code for '-' */
 
 /**********************************************************************************
  *                             External Variables                                 *
