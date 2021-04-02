@@ -64,7 +64,7 @@ extern uint8 g_password1[PASSWORD_WIDTH];/* Global Array to store password1 */
 extern uint8 g_password2[PASSWORD_WIDTH];/* Global Array to store password2 */
 extern uint8 g_systemStatus;		 /* Global variable to store the system status */
 extern uint8 g_tick;			 /* Global tick flag */
-extern uint8 g_lockSystem;		/* Global flag to store the system status */
+extern uint8 g_lockSystem;		 /* Global flag to store the system status */
 extern uint8 g_wrongAttempts;		 /* Global variable to store the number of wrong attempts */
 
 /********************************************************************************
