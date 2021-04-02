@@ -16,7 +16,7 @@
  *					- Control Motor speed using PWM [TIMER CTC Mode].
  *					- Use SW connected in (Pin3) in PORTD to revert the Motor Direction[INT0].
  *					- Sensor is connected through the ADC Driver, then Display the result on
- *				      the LCD.
+ *				          the LCD.
  *
  ***********************************************************************************************/
 
@@ -61,19 +61,19 @@ int main(void)
 	LCD_displayString("ADC Value = ");	/* Display this string "ADC Value = " only once at LCD */
 
 	/********************************************************************************
-	 *                        APPLICATION	(SUPER LOOP)						    *
+	 *                        APPLICATION	(SUPER LOOP)	         	        *
 	 ********************************************************************************/
 
 	while(1)
 	{
-		LCD_goToRowColumn(0,12); 		/* Display the number every time at this position */
+		LCD_goToRowColumn(0,12); 	/* Display the number every time at this position */
 		res_value = ADC_readChannel(0); /* Read channel zero where the potentiometer is connect */
 		LCD_intgerToString(res_value); 	/* Display the ADC value on LCD screen */
 
 
 		if(res_value > ZERO_TEMP && res_value <= LOW_TEMP)
 		{
-			PWM_Timer0_Init(QUARTER_SPEED);			/* Motor rotates with its Quarter speed */
+			PWM_Timer0_Init(QUARTER_SPEED);		/* Motor rotates with its Quarter speed */
 		}
 		else if (res_value > LOW_TEMP && res_value <= MODERAT_TEMP)
 		{
@@ -86,7 +86,7 @@ int main(void)
 		}
 		else if (res_value > HIGH_TEMP)
 		{
-			PWM_Timer0_Init(MAXIMUM_SPEED);			/* Motor rotates with its Full speed */
+			PWM_Timer0_Init(MAXIMUM_SPEED);		/* Motor rotates with its Full speed */
 		}
 	}
 }
