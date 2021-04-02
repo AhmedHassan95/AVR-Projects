@@ -31,15 +31,15 @@ extern unsigned char hours;	/* Global variable to store the number of hours */
  *
  * [Description]: 	Function to enable and configuration Interrupt0
  *
- * [Args]:			None
+ * [Args]:	None
  *
- * [in]			  	None
+ * [in]			 None
  *
- * [out]		  	None
+ * [out]		 None
  *
- * [in/out]		 	None
+ * [in/out]		None
  *
- * [Returns]:                   None
+ * [Returns]:                 None
  **********************************************************************************/
 void INT0_Init(void);
 
@@ -48,15 +48,15 @@ void INT0_Init(void);
  *
  * [Description]: 	Function to enable and configuration Interrupt1
  *
- * [Args]:			None
+ * [Args]:	None
  *
- * [in]			  	None
+ * [in]			 None
  *
- * [out]		  	None
+ * [out]		 None
  *
- * [in/out]		 	None
+ * [in/out]		None
  *
- * [Returns]:                   None
+ * [Returns]:                 None
  **********************************************************************************/
 void INT1_Init(void);
 
