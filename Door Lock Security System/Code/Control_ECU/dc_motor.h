@@ -58,13 +58,13 @@ void DCMOTOR_init(void);
  *
  * [Args]: 	 None
  * 
- * [in]	 	None
+ * [in]	 	 None
  *
  * [out]	 None
  *
  * [in/out]	 None
  *
- * [Returns]:     None
+ * [Returns]:    None
  *******************************************************************************/
 void DCMOTOR_rotateClockwise(void);
 
