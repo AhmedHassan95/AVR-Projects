@@ -90,13 +90,13 @@ void DCMOTOR_rotateAntiClockwise(void);
  *
  * [Description]: Function to stop the DC MOTOR
  *
- * [Args]:	 None
+ * [Args]:	  None
  *
- * [in]		None
+ * [in]		 None
  *
- * [out]	None
+ * [out]	 None
  *
- * [in/out]	None
+ * [in/out]	 None
  *
  * [Returns]:     None
  *******************************************************************************/
