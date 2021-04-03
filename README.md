@@ -1,5 +1,5 @@
 # AVR_Projects
-For AVR Projects
+Repository For AVR Projects
 
 All these projects are implemented using:
 
