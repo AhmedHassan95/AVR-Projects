@@ -196,7 +196,7 @@ void APP_countAlarmTime(void);
  *
  * [Args]:	  None
  *
- * [in]	         None
+ * [in]	          None
  *
  * [out]	  None
  *
