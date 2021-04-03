@@ -177,7 +177,7 @@ void APP_incorrectPassword(void);
  *
  * [Description]: Function to count the Alarm time
  *
- * [Args]: None
+ * [Args]:   None
  *
  * [in]		 None
  *
@@ -185,7 +185,7 @@ void APP_incorrectPassword(void);
  *
  * [in/out]	 None
  *
- * [Returns]:     None
+ * [Returns]:   None
  ********************************************************************************/
 void APP_countAlarmTime(void);
 
