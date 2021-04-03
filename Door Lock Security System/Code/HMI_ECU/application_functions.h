@@ -211,15 +211,15 @@ void APP_countMotorRunTime(void);
  *
  * [Description]: Function to count the Motor stopping time
  *
- * [Args]:    None
+ * [Args]:      None
  *
  * [in]		None
  *
- * [out]		 None
+ * [out]	None
  *
  * [in/out]	None
  *
- * [Returns]:    None
+ * [Returns]:   None
  ********************************************************************************/
 void APP_countMotorStopTime(void);
 
