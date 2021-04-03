@@ -194,7 +194,7 @@ void APP_countAlarmTime(void);
  *
  * [Description]: Function to count the Motor running time
  *
- * [Args]:	None
+ * [Args]:	  None
  *
  * [in]	None
  *
@@ -202,7 +202,7 @@ void APP_countAlarmTime(void);
  *
  * [in/out]	None
  *
- * [Returns]:     None
+ * [Returns]:   None
  ********************************************************************************/
 void APP_countMotorRunTime(void);
 
