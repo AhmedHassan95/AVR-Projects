@@ -196,13 +196,13 @@ void APP_countAlarmTime(void);
  *
  * [Args]:	  None
  *
- * [in]	    None
+ * [in]	      None
  *
- * [out]	 None
+ * [out]	  None
  *
- * [in/out]	 None
+ * [in/out]	  None
  *
- * [Returns]:    None
+ * [Returns]:     None
  ********************************************************************************/
 void APP_countMotorRunTime(void);
 
