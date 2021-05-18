@@ -8,13 +8,13 @@
  *
  * [DESCRIPTION]: This Project is to run the MC in the sleep Mode (Idle Mode).
  *
- *  			   Design Considerations MCU:
+ *  		  Design Considerations MCU:
  *
- *	 	 	 		 - Target: AVR MCU ATmega 16 (F_CPU = 1 MHZ).
- *	 	 	 		 - LCD connected to PORTC to display messages.
- *			     	 - SW connected to pin 2 in PORTB.
- *			     	 - Pin 1 in PORTB used for testing that the MCU enter correctly the sleep
- *			     	   mode or not.
+ *	 	  	- Target: AVR MCU ATmega 16 (F_CPU = 1 MHZ).
+ *	 	 	- LCD connected to PORTC to display messages.
+ *			- SW connected to pin 2 in PORTB.
+ *			- Pin 1 in PORTB used for testing that the MCU enter correctly the sleep
+ *			  mode or not.
  *
  *                The sequence of the Program:
  *
@@ -92,7 +92,7 @@ int main (void)
 	 set_sleep_mode(SLEEP_MODE_IDLE);	/* Set the MC in the Idle Mode */
 
 	/********************************************************************************
-	 *                        APPLICATION	(SUPER LOOP)						    *
+	 *                        APPLICATION	(SUPER LOOP)			        *
 	 ********************************************************************************/
 
 	 while(1)
