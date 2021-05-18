@@ -71,17 +71,17 @@ void LCD_goToRowColumn(uint8 row,uint8 col)
 	switch(row)
 	{
 		case 0:
-				Address=col;
-				break;
+			Address=col;
+			break;
 		case 1:
-				Address=col+0x40;
-				break;
+			Address=col+0x40;
+			break;
 		case 2:
-				Address=col+0x10;
-				break;
+			Address=col+0x10;
+			break;
 		case 3:
-				Address=col+0x50;
-				break;
+			Address=col+0x50;
+			break;
 	}					
 	/* 
 	 * To write to a specific address in the LCD 
