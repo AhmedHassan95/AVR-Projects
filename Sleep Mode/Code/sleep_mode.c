@@ -42,10 +42,10 @@ uint8 g_press = 0;	/* Global variable to store the numbers of the press */
 
 ISR(INT2_vect)
 {
-	++g_press;	/* Increment the numbers of the presses  */
+    ++g_press;	/* Increment the numbers of the presses  */
     PORTB |= (1<<PB1); /* Set pin 1 in PORTB with value 1 */
-	LCD_goToRowColumn(0, 16);
-	LCD_intgerToString(g_press);
+    LCD_goToRowColumn(0, 16);
+    LCD_intgerToString(g_press);
 }
 
 /*******************************************************************************
